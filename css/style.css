@@ -8,3 +8,23 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffff;
 }
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+    transition: top 0.3s ease, left 0.3s ease;
+    border-radius: 9px;
+}
+
+.skip-link:focus {
+    top: 50px;
+    left: 200px;
+    background-color: blue;
+    outline: 3px solid #000; 
+    outline-offset: 4px;
+}
