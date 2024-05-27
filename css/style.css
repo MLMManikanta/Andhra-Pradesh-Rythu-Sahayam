@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +7,101 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ffff;
+    background-color: #fff;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+}
+
+.logo img {
+    display: block;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+ul.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.sub-menu .menu-item {
+    margin: 0;
+}
+
+.sub-menu .menu-item a {
+    padding: 10px 20px;
+    display: block;
+    color: #000;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.menu-item a,
+.sub-menu .menu-item a {
+    color: #000;
+}
+
+
+.menu-item a:focus,
+.menu-item a:hover,
+.sub-menu .menu-item a:focus,
+.sub-menu .menu-item a:hover {
+    color: blue;
+}
+
+.menu-item a:focus,
+.sub-menu .menu-item a:focus {
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+.menu-item:hover .sub-menu,
+.menu-item:focus-within .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
 
 .skip-link {
     position: absolute;
