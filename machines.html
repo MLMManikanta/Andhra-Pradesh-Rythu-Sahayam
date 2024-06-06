@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andhra Pradesh Rithu Sahayam</title>
+    <link rel="icon" href="./logo1.png" type="image/icon type">
+    <link rel="stylesheet" href="css/header_style.css">
+    <link rel="stylesheet" href="css/machine_style.css">
+</head>
+<body>
+    <a href="#main" class="btn skip-link">Skip to main content</a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./logo1.png" alt="Company Logo" width="200" height="150">
+            </div>
+            <nav aria-label="Contextual menu">
+                <ul class="menu">
+                    <li class="menu-item"><a href="./crops.html">Crops</a></li>
+                    <li class="menu-item" id="machines-dropdown">
+                        Machines▼
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="./machines.html">Buy</a></li>
+                            <li class="menu-item"><a href="./machines.html">Sell</a></li>
+                            <li class="menu-item"><a href="./machines.html">Rent</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#market-prices">Market Prices</a></li>
+                    <li class="menu-item"><a href="#crop-buyers">Crop Buyers</a></li>
+                    <li class="menu-item"><a href="#farmer-adopt">Farmer Adopt</a></li>
+                    <li class="menu-item"><a href="#farmer-adopt">About US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <h1>Machines that are available in the current market</h1>
+
+        <h2>Most cultivated crops throughout Andhra Pradesh
+        </h2>
+
+        <div class="slider-container">
+            <div class="arrows left" onclick="scrollTabs('left')">
+                <img src="./arrow-left.png" alt="Left Arrow" width="50" height="50">
+            </div>
+            <div class="tab-container">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Rice')">Rice</button>
+                    <button class="tablinks" onclick="openTab(event, 'Groundnut')">Groundnut</button>
+                    <button class="tablinks" onclick="openTab(event, 'Sugarcane')">Sugarcane</button>
+                    <button class="tablinks" onclick="openTab(event, 'Chillies')">Chillies</button>
+                    <button class="tablinks" onclick="openTab(event, 'Cotton')">Cotton</button>
+                    <button class="tablinks" onclick="openTab(event, 'Maize')">Maize</button>
+                    <button class="tablinks" onclick="openTab(event, 'Mango')">Mango</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tobacco')">Tobacco</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tomato')">Tomato</button>
+                    <button class="tablinks" onclick="openTab(event, 'Horsegram')">Horsegram (Kulthi/Kollu)</button>
+                    <button class="tablinks" onclick="openTab(event, 'Greengram')">Greengram (Moong Dal)</button>
+                    <button class="tablinks" onclick="openTab(event, 'Blackgram')">Blackgram (Urad Dal)</button>
+                    <button class="tablinks" onclick="openTab(event, 'Redgram')">Redgram (Arhar/Tur Dal)</button>
+                    <button class="tablinks" onclick="openTab(event, 'Bengalgram')">Bengalgram (Chana Dal)</button>
+                    <button class="tablinks" onclick="openTab(event, 'Cowgram')">Cowgram (Lobia/Black-eyed Pea)</button>
+                    <button class="tablinks" onclick="openTab(event, 'RajmaBeans')">Rajma Beans (Kidney Beans)</button>
+                    <button class="tablinks" onclick="openTab(event, 'AnumuluYam')">Anumulu Yam (Elephant Foot Yam)</button>
+                    <button class="tablinks" onclick="openTab(event, 'YerraPappu')">Yerra Pappu / Mysoor Pappu (Red Lentils)</button>
+                </div>
+            </div>
+            <div class="arrows right" onclick="scrollTabs('right')">
+                <img src="./arrow-right.png" alt="Right Arrow" width="50" height="50">
+            </div>
+        </div>
+    
+        <div id="Rice" class="tabcontent">
+            <h3>Rice</h3>
+            <p>Information about Rice.</p>
+        </div>
+        
+        <div id="Groundnut" class="tabcontent">
+            <h3>Groundnut</h3>
+            <p>Information about Groundnut.</p>
+        </div>
+        
+        <div id="Sugarcane" class="tabcontent">
+            <h3>Sugarcane</h3>
+            <p>Information about Sugarcane.</p>
+        </div>
+        
+        <div id="Chillies" class="tabcontent">
+            <h3>Chillies</h3>
+            <p>Information about Chillies.</p>
+        </div>
+        
+        <div id="Cotton" class="tabcontent">
+            <h3>Cotton</h3>
+            <p>Information about Cotton.</p>
+        </div>
+        
+        <div id="Maize" class="tabcontent">
+            <h3>Maize</h3>
+            <p>Information about Maize.</p>
+        </div>
+        
+        <div id="Mango" class="tabcontent">
+            <h3>Mango</h3>
+            <p>Information about Mango.</p>
+        </div>
+        
+        <div id="Tobacco" class="tabcontent">
+            <h3>Tobacco</h3>
+            <p>Information about Tobacco.</p>
+        </div>
+        
+        <div id="Tomato" class="tabcontent">
+            <h3>Tomato</h3>
+            <p>Information about Tomato.</p>
+        </div>
+        
+        <div id="Horsegram" class="tabcontent">
+            <h3>Horsegram (Kulthi/Kollu)</h3>
+            <p>Information about Horsegram (Kulthi/Kollu).</p>
+        </div>
+        
+        <div id="Greengram" class="tabcontent">
+            <h3>Greengram (Moong Dal)</h3>
+            <p>Information about Greengram (Moong Dal).</p>
+        </div>
+        
+        <div id="Blackgram" class="tabcontent">
+            <h3>Blackgram (Urad Dal)</h3>
+            <p>Information about Blackgram (Urad Dal).</p>
+        </div>
+        
+        <div id="Redgram" class="tabcontent">
+            <h3>Redgram (Arhar/Tur Dal)</h3>
+            <p>Information about Redgram (Arhar/Tur Dal).</p>
+        </div>
+        
+        <div id="Bengalgram" class="tabcontent">
+            <h3>Bengalgram (Chana Dal)</h3>
+            <p>Information about Bengalgram (Chana Dal).</p>
+        </div>
+        
+        <div id="Cowgram" class="tabcontent">
+            <h3>Cowgram (Lobia/Black-eyed Pea)</h3>
+            <p>Information about Cowgram (Lobia/Black-eyed Pea).</p>
+        </div>
+        
+        <div id="RajmaBeans" class="tabcontent">
+            <h3>Rajma Beans (Kidney Beans)</h3>
+            <p>Information about Rajma Beans (Kidney Beans).</p>
+        </div>
+        
+        <div id="AnumuluYam" class="tabcontent">
+            <h3>Anumulu Yam (Elephant Foot Yam)</h3>
+            <p>Information about Anumulu Yam (Elephant Foot Yam).</p>
+        </div>
+        
+        <div id="YerraPappu" class="tabcontent">
+            <h3>Yerra Pappu / Mysoor Pappu (Red Lentils)</h3>
+            <p>Information about Yerra Pappu / Mysoor Pappu (Red Lentils).</p>
+        </div>
+        
+        <h1>Trending Crops in Andhra Pradesh</h1>
+  <!--   <div class="slider-container">
+        <div class="arrows left" onclick="scrollTabs('left')">
+            <img src="./arrow-left.png" alt="Left Arrow" width="50" height="50">
+        </div> -->
+        <div class="tab-container ">
+            <div class="tab tab2">
+                <button class="tablinks" onclick="openTab(event, 'DragonFruit')">Dragon Fruit</button>
+                <button class="tablinks" onclick="openTab(event, 'Avocado')">Avocado</button>
+                <button class="tablinks" onclick="openTab(event, 'OrganicVegetables')">Organic Vegetables</button>
+                <button class="tablinks" onclick="openTab(event, 'Quinoa')">Quinoa</button>
+                <button class="tablinks" onclick="openTab(event, 'FingerMillet')">Finger Millet</button>
+                <button class="tablinks" onclick="openTab(event, 'PearlMillet')">Pearl Millet</button>
+                <button class="tablinks" onclick="openTab(event, 'OilPalm')">Oil Palm</button>
+                <button class="tablinks" onclick="openTab(event, 'Turmeric')">Turmeric</button>
+                <button class="tablinks" onclick="openTab(event, 'Stevia')">Stevia</button>
+            </div>
+        </div>
+      <!--   <div class="arrows right" onclick="scrollTabs('right')">
+            <img src="./arrow-right.png" alt="Right Arrow" width="50" height="50">
+        </div> -->
+    </div>
+    
+    <div id="DragonFruit" class="tabcontent">
+        <!-- Content for Dragon Fruit tab -->
+        <h3>Dragon Fruit</h3>
+        <p>Information about Dragon Fruit.</p>
+    </div>
+    
+    <div id="Avocado" class="tabcontent">
+        <!-- Content for Avocado tab -->
+        <h2>Avocado</h2>
+        <p>Information about Avocado.</p>
+    </div>
+    
+    <div id="OrganicVegetables" class="tabcontent">
+        <!-- Content for Organic Vegetables tab -->
+        <h2>Organic Vegetables</h2>
+        <p>Information about Organic Vegetables.</p>
+    </div>
+    
+    <div id="Quinoa" class="tabcontent">
+        <!-- Content for Quinoa tab -->
+        <h2>Quinoa</h2>
+        <p>Information about Quinoa.</p>
+    </div>
+    
+    <div id="FingerMillet" class="tabcontent">
+        <!-- Content for Finger Millet tab -->
+        <h2>Finger Millet</h2>
+        <p>Information about Finger Millet.</p>
+    </div>
+    
+    <div id="PearlMillet" class="tabcontent">
+        <!-- Content for Pearl Millet tab -->
+        <h2>Pearl Millet</h2>
+        <p>Information about Pearl Millet.</p>
+    </div>
+    
+    <div id="OilPalm" class="tabcontent">
+        <!-- Content for Oil Palm tab -->
+        <h2>Oil Palm</h2>
+        <p>Information about Oil Palm.</p>
+    </div>
+    
+    <div id="Turmeric" class="tabcontent">
+        <!-- Content for Turmeric tab -->
+        <h2>Turmeric</h2>
+        <p>Information about Turmeric.</p>
+    </div>
+    
+    <div id="Stevia" class="tabcontent">
+        <!-- Content for Stevia tab -->
+        <h2>Stevia</h2>
+        <p>Information about Stevia.</p>
+    </div>
+
+    </main>
+    <script src="./index.js"></script>
+    <script src="./machines.js"></script>
+</body>
+</html>
