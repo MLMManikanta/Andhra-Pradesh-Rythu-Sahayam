@@ -36,9 +36,7 @@ body {
 }
 
 /* ---Header--- */
-header {
 
-}
 
 .container {
     display: flex;
@@ -72,7 +70,7 @@ ul {
     margin: 5px;
     padding: 5px;
     background: linear-gradient(to top, #FFC107 30%, #169347);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5em;
     font-weight: bold;
@@ -138,15 +136,35 @@ h1 {
     text-align: center;
     gap: 2rem;
     background: radial-gradient(circle, #f7c912 0%, #ff9a00 20%, #ff0000 70%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: start;
+    background: var(--TEXTC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: start;
+    background: var(--TEXTC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px;
 }
 
 p {
     font-size: 1rem;
     margin: 1rem 0;
     background: var(--TEXTC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 3px;
 }
@@ -161,6 +179,6 @@ footer {
     bottom: 0;
     width: 100%;
     background: var(--TEXTC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }

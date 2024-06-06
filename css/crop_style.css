@@ -8,7 +8,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #010101;
-}
+        text-align: center;
+    }
+
 
 :root {
     --TEXTC: linear-gradient(8deg, rgba(247,201,18,1) 22%, rgba(255,154,0,1) 100%);
@@ -18,20 +20,13 @@ p {
     font-size: 1rem;
     margin: 1rem 0;
     background: var(--TEXTC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.List_above {
-    text-align: start;
-    font-style: italic;
-    font-size: 2rem;
 }
 
 /* table */
 .crop_table {
-    display: flex;
-    justify-content: center;
+   padding-left: 100px;
 }
 
 
@@ -39,7 +34,7 @@ table {
     border-collapse: collapse;
     margin: 1rem 0;
     background: var(--TEXTC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -50,11 +45,20 @@ table {
     width: 500px;
     text-align: left;
     background: var(--TEXTC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   td ol li {
     list-style: none; 
     margin: 1rem 0;
+  }
+
+  thead {
+    font-size: 2.4em;
+    font-style: boldest;
+  }
+
+  td:nth-child(1) {
+    font-size: 2em;
   }
