@@ -12,6 +12,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+<<<<<<< HEAD
 
 /* Tractor */
 function showModal(id) {
@@ -23,3 +24,26 @@ function closeModal(id) {
     var modal = document.getElementById(id);
     modal.close();
 }
+=======
+function scrollTabs(direction) {
+    const tabContainer = document.querySelector('.tab-container');
+    const scrollAmount = 200; // Adjust as needed
+    if (direction === 'left') {
+        tabContainer.scrollBy({
+            top: 0,
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    } else if (direction === 'right') {
+        tabContainer.scrollBy({
+            top: 0,
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+}
+
+/* tractors */
+
+
+>>>>>>> 4f247fc (Lost)
