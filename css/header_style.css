@@ -11,7 +11,8 @@ body {
 }
 
 :root {
-    --TEXTC: linear-gradient(8deg, rgba(247,201,18,1) 22%, rgba(255,154,0,1) 100%);
+    --TEXTC: linear-gradient(8deg, #f7c912 22%, rgba(255,154,0,1) 100%);
+    --H2:linear-gradient(0deg, rgba(255,154,0,1) 14%, rgba(255,0,0,1) 100%);
 }
 
 /* ---Skip to Main--- */
@@ -143,7 +144,8 @@ h2 {
     font-size: 2rem;
     margin: 1rem 0;
     text-align: start;
-    background: var(--TEXTC);
+    /* background: var(--H2); */
+    background: #ff0000;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
