@@ -85,7 +85,7 @@ p {
     padding-left: 100px;
 }
 
-.tractor {
+.tractor, .Rotavator {
     display: flex;
     background-color: #010101;
     flex-direction: row;

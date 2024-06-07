@@ -206,6 +206,43 @@
             <h3>Rice</h3>
             <h4>1. Tillage</h4>
             <p class="rice">Rotavator: This machine is used for preparing the land for planting by breaking up the soil and mixing in residues. </p>
+            <div>
+              <ul class="Rotavator">
+                  <li><button onclick="showModal('Diesel_Power')"><img src="./machinery_imges/Rice/Rotavator/Diesel_Power_weeder.png" alt="JOHN DEERE 5310"></button></li>
+                  <li><button onclick="showModal('Rotavator_large')"><img src="./machinery_imges/Rice/Rotavator/Rotavator_large.png" alt="MAHINDRA 575 DI"></button></li> 
+                  <li><button onclick="showModal('Rotavator_small')"><img src="./machinery_imges/Rice/Rotavator/Rotavator_small.png" alt="SONALIKA DI 750 III"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="Diesel_Power">
+            <div class="dialog-content">
+               <img src="./machinery_imges/Rice/Rotavator/Diesel_Power_weeder.png" alt="JOHN DEERE 5310">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('Diesel_Power')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">E Agro Care D 531 Power Weeder</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                <li class="centered"><pre>Power             : 3   HP</pre></li>
+                <li class="centered"><pre>Fuel Consumption           : 0.75 - 1 Litre/Hour</pre></li>
+                </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 85,000</h2>
+                  <h2>Rent: RS. 450 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
 
             <h4>2. Puddling</h4>
             <p class="rice">Power tiller-mounted cono-puddlers: These are rotary tillers mounted on power tillers that are used to puddle the soil, which involves creating a wet, muddy layer that helps retain water and suppress weeds.</p>
