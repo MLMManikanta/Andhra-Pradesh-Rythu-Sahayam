@@ -191,3 +191,20 @@ li {
   pre {
     margin:2px;
   }
+
+  .mahindra_img {
+    margin-top: 50px;
+    filter: drop-shadow(0 0 0.75rem crimson); 
+  }
+
+.joh_img {
+  filter: drop-shadow(0 0 0.75rem #60B64F); 
+}
+
+.POWERTRAC_img {
+  filter: drop-shadow(0 0 0.75rem #2982EB); 
+}
+
+.kubota_img {
+  filter: drop-shadow(0 0 0.75rem #CD0803); 
+}
