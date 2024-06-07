@@ -3,42 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andhra Pradesh Rithu Sahayam</title>
-    <link rel="icon" href="./logo1.png" type="image/icon type">
-    <link rel="stylesheet" href="css/header_style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: orange;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        dialog {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            width: 79%;
+            height: 80%;
+            margin: 50;
+            position: relative;
+        }
+        .dialog-content {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        dialog img {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .details {
+            text-align: center;
+        }
+        .details p, .details h2, .details h1 {
+            margin: 5px 0;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            background-color: orange;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <title>New Holland 3630</title>
 </head>
 <body>
-    <a href="#main" class="btn skip-link">Skip to main content</a>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./logo1.png" alt="Company Logo" width="200" height="150">
-                </a>
+    <dialog id="powertrac">
+        <div class="dialog-content">
+            <button class="close" onclick="closeModal('powertrac')">✕</button>
+            <img src="./machinery_imges/Tractors/POWERTRAC_STEELTRAC.png" alt="NEW HOLLAND 3630">
+            <div class="details">
+                <h1>NEW HOLLAND 3630</h1>
+                <p>Power: 50 HP</p>
+                <p>Weight: 2000 kg</p>
+                <p>Engine: 2800 cc</p>
+                <p>Warranty: 2 years</p>
+                <h2>Price: Rs. 7,10,000</h2>
+                <h2>Rent: RS. 800 per day</h2>
+                <div class="button-container">
+                    <button>CONNECT US</button>
+                </div>
             </div>
-            <nav aria-label="Contextual menu">
-                <ul class="menu">
-                    <li class="menu-item"><a href="./crops.html">Crops</a></li>
-                    <li class="menu-item" id="machines-dropdown">
-                        <a href="./machines.html"> Machines</a>
-                    </li>
-                    <li class="menu-item"><a href="./market-prices.html">Market Prices</a></li>
-                    <li class="menu-item"><a href="./crop-buyers.html">Crop Buyers</a></li>
-                    <li class="menu-item"><a href="./farmer-adopt.html">Farmer Adopt</a></li>
-                    <li class="menu-item"><a href="./about_us.html">About Us</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
-    <main class="main_content">
-     
-    </main>
+    </dialog>
 
-    <footer>
-        <div>
-            <p>&copy; 2024 Andhra Pradesh Rithu Sahayam. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="./index.js"></script>
+    <script>
+        function closeModal(id) {
+            document.getElementById(id).close();
+        }
+    </script>
 </body>
 </html>

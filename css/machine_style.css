@@ -79,6 +79,10 @@ button {
 }
 
 /* Tractor */
+p {
+    padding-left: 100px;
+}
+
 .tractor {
     display: flex;
     background-color: #010101;
@@ -90,3 +94,94 @@ button {
     padding: 20px;
 }
 
+dialog {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 79%;
+    height: auto;
+    margin: 50;
+    top: 150px;
+    left: 100px;
+  }
+
+  .dialog-content {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 50 auto;
+  }
+
+  dialog img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .details {
+    text-align: center; 
+  }
+
+  .details p {
+    margin-left: -500px; 
+  }
+
+  .image-container {
+    flex: 1;
+  }
+
+  .details {
+    flex: 2;
+    padding-left: 20px;
+  }
+
+  .details h1 {
+    margin-left: -500px; 
+    margin-top: -50px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .centered {
+    text-align: start;
+    color: #f7c912;
+    list-style: none;
+    margin-left: 200PX;
+
+  }
+li {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+  .center_main{
+    margin-left: -200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-self: flex-start;
+
+  }
+
+  .details {
+    margin-left: 20px;
+  }
+
+  .cost {
+    margin-left: -100px;
+  }
+
+  .ctus {
+    margin-left: -100px;
+  }
