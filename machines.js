@@ -29,3 +29,14 @@ function scrollTabs(direction) {
         });
     }
 }
+
+/* Tractor */
+function showModal(id) {
+    var modal = document.getElementById(id);
+    modal.showModal();
+}
+
+function closeModal(id) {
+    var modal = document.getElementById(id);
+    modal.close();
+}
