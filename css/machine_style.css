@@ -11,6 +11,8 @@ body {
 
 :root {
     --TEXTC: linear-gradient(8deg, #f7c912 22%, rgba(255,154,0,1) 100%);
+    --BACKCO: linear-gradient(8deg, rgba(126, 123, 123, 0.404) 100%, rgba(189, 184, 178, 0.76) 22%);
+    --BACKCO1: linear-gradient(8deg, rgb(247, 201, 18) 100%, rgba(255, 153, 0, 0.978) 22%);
 }
 button {
     background: var(--TEXTC);
@@ -207,4 +209,8 @@ li {
 
 .kubota_img {
   filter: drop-shadow(0 0 0.75rem #CD0803); 
+}
+
+.tractor button {
+  background: var(--BACKCO);
 }
