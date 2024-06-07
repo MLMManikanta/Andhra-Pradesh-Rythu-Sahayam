@@ -142,7 +142,7 @@ dialog {
 
   .details h1 {
     margin-left: -500px; 
-    margin-top: -50px;
+    margin-top: -20px;
   }
 
   .close {
@@ -160,9 +160,11 @@ dialog {
     margin-left: 200PX;
 
   }
+
 li {
     font-size: 24px;
     font-weight: bold;
+    gap: 10px;
 }
 
   .center_main{
@@ -184,4 +186,8 @@ li {
 
   .ctus {
     margin-left: -100px;
+  }
+
+  pre {
+    margin:2px;
   }

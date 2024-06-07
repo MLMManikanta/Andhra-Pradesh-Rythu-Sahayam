@@ -39,45 +39,73 @@
             <div>
                 <ul class="tractor">
                     <li><button onclick="showModal('john')"><img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310"></button></li>
-                    <li><button onclick="showModal('mahindra')"><img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI"></button></li>
-                    <li><button onclick="showModal('powertrac')"><img src="./machinery_imges/Tractors/POWERTRAC_STEELTRAC.png" alt="NEW HOLLAND 3630"></button></li>
-                    <li><button onclick="showModal('kubota')"><img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441.png" alt="SONALIKA DI 750 III"></button></li>
+                    <li><button onclick="showModal('mahindra')"><img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI"></button></li> 
+                    <li><button onclick="showModal('kubota')"><img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441_in.jpg" alt="SONALIKA DI 750 III"></button></li>
+                    <li><button onclick="showModal('powertrac')"><img src="./machinery_imges/Tractors/new-holland-3630-TX-Plus1.png" alt="NEW HOLLAND 3630"></button></li>
                 </ul>
+            </div>
         
-                <div class="machinery" id="john">
-                    <dialog>
-                        <div class="dialog-content">
-                            <div class="image-container">
-                                <img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310">
-                            </div>
-                            <div class="details">
-                                <h1>JOHN DEERE 5310</h1>
-                                <p>Power: 55 HP</p>
-                                <p>Weight: 2110 kg</p>
-                                <p>Engine: 2900 cc</p>
-                                <p>Warranty: 2 years</p>
-                                <p>Price: 7,50,000 rs</p>
-                                <p>Cost per day: 300 rs</p>
-                            </div>
-                            <button class="close-button" onclick="closeModal('john')">Close</button>
-                        </div>
-                    </dialog>
-                </div>
-        
-                <dialog id="mahindra">
+                <dialog id="john">
                     <div class="dialog-content">
-                        <img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI">
-                        <div class="details">
-                            <h1>MAHINDRA 575 DI</h1>
-                            <p>Price: Rs. 6,00,000</p>
-                            <p>Power: 45 HP</p>
-                            <p>Weight: 1950 kg</p>
-                            <p>Engine: 2700 cc</p>
-                            <p>Warranty: 2 years</p>
+                       <img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310">
+                      <div class="details">
+                        <div>
+                          <div class="close">
+                            <button onclick="closeModal('john')">✕</button>
+                          </div>
+                          <div class="inside_the_dialog">
+                            <h1 class="centered1">JOHN DEERE 5405 2WD</h1>
+                          </div>
                         </div>
+                        <ul class="center_main">
+                        <li class="centered"><pre>Power             : 63   HP</pre></li>
+                        <li class="centered"><pre>Engine            : 2100 cc</pre></li>
+                        <li class="centered"><pre>Fuel Tank Capacity: 68 Lit</pre></li>
+                        <li class="centered"><pre>Lifting Capacity  : 2000 KG</pre></li>
+                        </ul>
+                        <div>
+                            <div class="cost">
+                          <h2>Price: Rs. 7,00,000</h2>
+                          <h2>Rent: RS. 850 per day</h2>
+                        </div>
+                          <div>
+                            <button class="ctus">CONNECT US</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <button onclick="closeModal('mahindra')">Close</button>
-                </dialog>
+                  </dialog>
+
+                  <dialog id="mahindra">
+                    <div class="dialog-content">
+                       <img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus_in.jpg" alt="MAHINDRA 575 DI">
+                      <div class="details">
+                        <div>
+                          <div class="close">
+                            <button onclick="closeModal('mahindra')">✕</button>
+                          </div>
+                          <div class="inside_the_dialog">
+                            <h1 class="centered1">MAHINDRA 575 DI XP Plus</h1>
+                          </div>
+                        </div>
+                        <ul class="center_main">
+                            <li class="centered"><pre>Power             : 63   HP</pre></li>
+                            <li class="centered"><pre>Engine            : 2100 cc</pre></li>
+                            <li class="centered"><pre>Fuel Tank Capacity: 68 Lit</pre></li>
+                            <li class="centered"><pre>Lifting Capacity  : 2000 KG</pre></li>
+                            </ul>
+                        <div >
+                            <div class="cost">
+                          <h2>Price: Rs. 7,50,000</h2>
+                          <h2>Rent: RS. 800 per day</h2>
+                        </div>
+                          <div>
+                            <button class="ctus">CONNECT US</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </dialog>
         
                 <dialog id="powertrac">
                     <div class="dialog-content">
@@ -92,12 +120,15 @@
                           </div>
                         </div>
                         <ul class="center_main">
-                        <li class="centered">Power : 50   HP</li>
-                        <li class="centered">Engine: 2800 cc</li>
-                        </ul>
+                            <li class="centered"><pre>Power             : 55   HP</pre></li>
+                            <li class="centered"><pre>Engine            : 2300 cc</pre></li>
+                            <li class="centered"><pre>Fuel Tank Capacity: 60 Lit</pre></li>
+                            <li class="centered"><pre>Lifting Capacity  : 2000 KG</pre></li>
+                            </ul>
+                        
                         <div >
                             <div class="cost">
-                          <h2>Price: Rs. 7,10,000</h2>
+                          <h2>Price: Rs. 7,95,000</h2>
                           <h2>Rent: RS. 800 per day</h2>
                         </div>
                           <div>
@@ -109,21 +140,36 @@
                   </dialog>
                     
         
-                <dialog id="kubota">
+                  <dialog id="kubota">
                     <div class="dialog-content">
-                        <img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441.png" alt="SONALIKA DI 750 III">
-                        <div class="details">
-                            <h1>SONALIKA DI 750 III</h1>
-                            <p>Price: Rs. 6,50,000</p>
-                            <p>Power: 47 HP</p>
-                            <p>Weight: 2100 kg</p>
-                            <p>Engine: 2800 cc</p>
-                            <p>Warranty: 2 years</p>
+                       <img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441_in.jpg" alt="SONALIKA DI 750 III">
+                      <div class="details">
+                        <div>
+                          <div class="close">
+                            <button onclick="closeModal('kubota')">✕</button>
+                          </div>
+                          <div class="inside_the_dialog">
+                            <h1 class="centered1">SONALIKA DI 750 III</h1>
+                          </div>
                         </div>
+                        <ul class="center_main">
+                            <li class="centered"><pre>Power             : 24   HP</pre></li>
+                            <li class="centered"><pre>Engine            : 2600 cc</pre></li>
+                            <li class="centered"><pre>Fuel Tank Capacity: 23 Lit</pre></li>
+                            <li class="centered"><pre>Lifting Capacity  : 750 KG</pre></li>
+                            </ul>
+                        <div >
+                            <div class="cost">
+                          <h2>Price: Rs. 5,00,000</h2>
+                          <h2>Rent: RS. 800 per day</h2>
+                        </div>
+                          <div>
+                            <button class="ctus">CONNECT US</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <button onclick="closeModal('kubota')">Close</button>
-                </dialog>
-            </div>
+                  </dialog>
 
         <div class="slider-container">
             <div class="arrows left" onclick="scrollTabs('left')">
