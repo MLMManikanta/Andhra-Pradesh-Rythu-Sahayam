@@ -34,7 +34,7 @@
         <h2>Most cultivated crops throughout Andhra Pradesh
         </h2>
         <h2>Tractors</h2>
-            <p class="rice">They are the most commonly used machinery in rice cultivation. They are used for various operations such as land preparation, planting, and harvesting. Tractors come in different sizes and power ratings to suit the needs of different farmers.</p>
+            <p class="Tractors">They are the most commonly used machinery in rice cultivation. They are used for various operations such as land preparation, planting, and harvesting. Tractors come in different sizes and power ratings to suit the needs of different farmers.</p>
 
             <div>
                 <ul class="tractor">
@@ -44,52 +44,86 @@
                     <li><button onclick="showModal('kubota')"><img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441.png" alt="SONALIKA DI 750 III"></button></li>
                 </ul>
         
-                <dialog id="john">
-                    <img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310">
-                    <p>JOHN DEERE 5310</p>
-                    <p>Price: Rs. 7,50,000</p>
-                    <p>Power: 55 HP</p>
-                    <p>Weight: 2110 kg</p>
-                    <p>Engine: 2900 cc</p>
-                    <p>Warranty: 2 years</p>
-                    <button onclick="closeModal('john')">Close</button>
-                </dialog>
+                <div class="machinery" id="john">
+                    <dialog>
+                        <div class="dialog-content">
+                            <div class="image-container">
+                                <img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310">
+                            </div>
+                            <div class="details">
+                                <h1>JOHN DEERE 5310</h1>
+                                <p>Power: 55 HP</p>
+                                <p>Weight: 2110 kg</p>
+                                <p>Engine: 2900 cc</p>
+                                <p>Warranty: 2 years</p>
+                                <p>Price: 7,50,000 rs</p>
+                                <p>Cost per day: 300 rs</p>
+                            </div>
+                            <button class="close-button" onclick="closeModal('john')">Close</button>
+                        </div>
+                    </dialog>
+                </div>
         
                 <dialog id="mahindra">
-                    <img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI">
-                    <p>MAHINDRA 575 DI</p>
-                    <p>Price: Rs. 6,00,000</p>
-                    <p>Power: 45 HP</p>
-                    <p>Weight: 1950 kg</p>
-                    <p>Engine: 2700 cc</p>
-                    <p>Warranty: 2 years</p>
+                    <div class="dialog-content">
+                        <img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI">
+                        <div class="details">
+                            <h1>MAHINDRA 575 DI</h1>
+                            <p>Price: Rs. 6,00,000</p>
+                            <p>Power: 45 HP</p>
+                            <p>Weight: 1950 kg</p>
+                            <p>Engine: 2700 cc</p>
+                            <p>Warranty: 2 years</p>
+                        </div>
+                    </div>
                     <button onclick="closeModal('mahindra')">Close</button>
                 </dialog>
         
                 <dialog id="powertrac">
-                    <img src="./machinery_imges/Tractors/POWERTRAC_STEELTRAC.png" alt="NEW HOLLAND 3630">
-                    <p>NEW HOLLAND 3630</p>
-                    <p>Price: Rs. 7,10,000</p>
-                    <p>Power: 50 HP</p>
-                    <p>Weight: 2000 kg</p>
-                    <p>Engine: 2800 cc</p>
-                    <p>Warranty: 2 years</p>
-                    <button onclick="closeModal('powertrac')">Close</button>
-                </dialog>
+                    <div class="dialog-content">
+                      <img src="./machinery_imges/Tractors/POWERTRAC_STEELTRAC.png" alt="NEW HOLLAND 3630">
+                      <div class="details">
+                        <div>
+                          <div class="close">
+                            <button onclick="closeModal('powertrac')">✕</button>
+                          </div>
+                          <div class="inside_the_dialog">
+                            <h1 class="centered1">NEW HOLLAND 3630</h1>
+                          </div>
+                        </div>
+                        <ul class="center_main">
+                        <li class="centered">Power : 50   HP</li>
+                        <li class="centered">Engine: 2800 cc</li>
+                        </ul>
+                        <div >
+                            <div class="cost">
+                          <h2>Price: Rs. 7,10,000</h2>
+                          <h2>Rent: RS. 800 per day</h2>
+                        </div>
+                          <div>
+                            <button class="ctus">CONNECT US</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </dialog>
+                    
         
                 <dialog id="kubota">
-                    <img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441.png" alt="SONALIKA DI 750 III">
-                    <p>SONALIKA DI 750 III</p>
-                    <p>Price: Rs. 6,50,000</p>
-                    <p>Power: 47 HP</p>
-                    <p>Weight: 2100 kg</p>
-                    <p>Engine: 2800 cc</p>
-                    <p>Warranty: 2 years</p>
+                    <div class="dialog-content">
+                        <img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441.png" alt="SONALIKA DI 750 III">
+                        <div class="details">
+                            <h1>SONALIKA DI 750 III</h1>
+                            <p>Price: Rs. 6,50,000</p>
+                            <p>Power: 47 HP</p>
+                            <p>Weight: 2100 kg</p>
+                            <p>Engine: 2800 cc</p>
+                            <p>Warranty: 2 years</p>
+                        </div>
+                    </div>
                     <button onclick="closeModal('kubota')">Close</button>
                 </dialog>
             </div>
-                
-
 
         <div class="slider-container">
             <div class="arrows left" onclick="scrollTabs('left')">
