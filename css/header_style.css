@@ -23,7 +23,6 @@ body {
     color: #fff;
     padding: 8px;
     z-index: 1000;
-    transition: top 0.3s ease, left 0.3s ease;
     border-radius: 9px;
 }
 
@@ -82,7 +81,7 @@ li a {
 }
 
 /* Machines dropdown */
-.sub-menu {
+/* .sub-menu {
     list-style: none; 
     position: absolute;
     left: 50px;
@@ -121,7 +120,7 @@ li a {
     margin: 2px;
     text-decoration: underline;
     border-radius: 4px;
-}
+} */
 
 /* Main Section */
 .main_content {
