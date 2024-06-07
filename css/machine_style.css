@@ -77,3 +77,16 @@ button {
     display: flex;
     justify-content: center;
 }
+
+/* Tractor */
+.tractor {
+    display: flex;
+    background-color: #010101;
+    flex-direction: row;
+   flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
