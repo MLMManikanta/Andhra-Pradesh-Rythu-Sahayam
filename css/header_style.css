@@ -11,8 +11,9 @@ body {
 }
 
 :root {
-    --TEXTC: linear-gradient(8deg, #f7c912 22%, rgba(255,154,0,1) 100%);
-    --H2:linear-gradient(0deg, rgba(255,154,0,1) 14%, rgba(255,0,0,1) 100%);
+    --TEXTC: linear-gradient(8deg, #f7c912 22%, rgb(255, 72, 0) 100%);
+    --H2:linear-gradient(0deg, rgba(255,154,0,1) 2%, rgba(255,0,0,1) 100%);
+    --h3: radial-gradient(circle, rgba(202,8,8,1) 0%, rgba(252,5,5,1) 8%, rgba(241,51,51,1) 64%, rgba(205,8,8,1) 75%, rgba(255,68,68,0.8341387580422794) 97%);
 }
 
 /* ---Skip to Main--- */
@@ -81,48 +82,6 @@ li a {
     color: #000;
 }
 
-/* Machines dropdown */
-/* .sub-menu {
-    list-style: none; 
-    position: absolute;
-    left: 50px;
-    top: 100%;
-    background-color: #000;
-    border-radius: 4px;
-    border: 2px solid rgba(128, 128, 128, 0.248);
-    display: none;
-    padding: 10px;
-    gap:4px;
-}
-
-.sub-menu::before {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    border: 10px solid transparent;
-    border-bottom-color: #000;
-}
-
-.sub-menu::after {
-    position: absolute;
-    top: -16px;
-    left: 20px;
-    border: 10px solid transparent;
-    border-bottom-color: rgba(128, 128, 128, 0.248);
-}
-
-.menu-item:hover .sub-menu, .menu-item:focus-within .sub-menu {
-    display: block;
-}
-
-.container a:hover,.container a:focus {
-    outline: #fff 3px solid;
-    padding: 2px;
-    margin: 2px;
-    text-decoration: underline;
-    border-radius: 4px;
-} */
-
 /* Main Section */
 .main_content {
     align-items: center;
@@ -155,10 +114,18 @@ h3 {
     font-size: 1.5rem;
     margin: 1rem 0;
     text-align: start;
-    background: var(--TEXTC);
+    background: #f20505;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
+}
+
+h4 {
+        color: #f13333;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 20px 0;
+        margin-left: 110px;
 }
 
 p {

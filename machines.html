@@ -38,10 +38,10 @@
 
             <div >
                 <ul class="tractor">
-                    <li><button onclick="showModal('john')"><img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310"></button></li>
-                    <li><button onclick="showModal('mahindra')"><img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI"></button></li> 
-                    <li><button onclick="showModal('kubota')"><img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441_in.jpg" alt="SONALIKA DI 750 III"></button></li>
-                    <li><button onclick="showModal('powertrac')"><img src="./machinery_imges/Tractors/new-holland-3630-TX-Plus1.png" alt="NEW HOLLAND 3630"></button></li>
+                    <li><button class="btn_t" onclick="showModal('john')"><img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310"></button></li>
+                    <li><button class="btn_t" onclick="showModal('mahindra')"><img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI"></button></li> 
+                    <li><button class="btn_t" onclick="showModal('kubota')"><img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441_in.jpg" alt="SONALIKA DI 750 III"></button></li>
+                    <li><button class="btn_t" onclick="showModal('powertrac')"><img src="./machinery_imges/Tractors/new-holland-3630-TX-Plus1.png" alt="NEW HOLLAND 3630"></button></li>
                 </ul>
             </div>
         
@@ -223,7 +223,7 @@
 
           <dialog id="Rotavator_small">
             <div class="dialog-content  ">
-               <img class="rbtn dbtn rbtn2" src="./machinery_imges/Rice/Rotavator/Rotavator_small.png" alt="Small Rotavator">
+               <img class="rbtn dbtn " src="./machinery_imges/Rice/Rotavator/Rotavator_small.png" alt="Small Rotavator">
               <div class="details">
                 <div>
                   <div class="close">
@@ -253,31 +253,274 @@
             <h4>2. Puddling</h4>
             <p class="rice">Power tiller-mounted cono-puddlers: These are rotary tillers mounted on power tillers that are used to puddle the soil, which involves creating a wet, muddy layer that helps retain water and suppress weeds.</p>
 
+            <div>
+              <ul class="Puddling">
+                  <li><button class="btn Pdc" onclick="showModal('PPuddling')"><img src="./machinery_imges/Rice/puddlers/Power_tiller-mounted.png" alt="JOHN DEERE 5310"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="PPuddling" class="Pdc1">
+            <div class="dialog-content ">
+               <img class="Pbtn Pbtn Pbtn1" src="./machinery_imges/Rice/puddlers/Power_tiller-mounted.png" alt="Diesel Power weeder">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('PPuddling')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">Fully Automatic Rotary Power Tiller</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                <li class="centered"><pre>Power Source : Petrol</pre></li>
+                <li class="centered"><pre>Engine Type  : Air Cooled</pre></li>
+                </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 70,000</h2>
+                  <h2>Rent: RS. 500 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
             <h4>3. Land Leveling</h4>
             <p class="rice">Laser land leveler: This is a high-tech machine that uses lasers to precisely level the land, ensuring uniform water distribution and improving crop growth. </p>
 
+            <div>
+              <ul class="Puddling">
+                  <li><button class="btn Pdc" onclick="showModal('Land_Leveling')"><img src="./machinery_imges/Rice/land-leveler/laser-land-leveler.png" alt="Land Leveling"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="Land_Leveling" class="ldc1">
+            <div class="dialog-content ">
+              <img src="./machinery_imges/Rice/land-leveler/laser-land-leveler.png" alt="Land Leveling">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('Land_Leveling')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">Laser Land Leveler Pro-5000</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Power         : 50HP</pre></li>
+                  <li class="centered"><pre>Blade         : Boron Carbon - 12mm thick</pre></li>
+                  <li class="centered"><pre>Working Width	:7 feet (2.1 meter)</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 3,70,000</h2>
+                  <h2>Rent: RS. 600 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
             <h4>4. Seeding, Planting, and Transplanting</h4>
-            <p class="rice">Power tiller and tractor-drawn seed drills: These are machines that can sow seeds in rows at a precise depth and spacing. </p>
-            <p class="rice">Rice transplanter: This machine is used to transplant seedlings that have been grown in a nursery into the paddy field. </p>
+           
+            <p class="rice">1. Power tiller and tractor-drawn seed drills: These are machines that can sow seeds in rows at a precise depth and spacing. </p>
+
+            <div>
+              <ul class="DPlanter">
+                  <li><button class="btn Pdc" onclick="showModal('Drawn_Planter')"><img src="./machinery_imges/Rice/Drawn_Planter/Rohit Krishi RIPLP0790 Tractor Drawn Planter.png" alt="Tractor Drawn Planter"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="Drawn_Planter" class="tddc1">
+            <div class="dialog-content ">
+              <img class="rktdp" src="./machinery_imges/Rice/Drawn_Planter/Rohit Krishi RIPLP0790 Tractor Drawn Planter.png" alt="Tractor Drawn Planter">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('Drawn_Planter')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">Semi Automatic Tractor Drawn Planter</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Power         : 35HP</pre></li>
+                  <li class="centered"><pre>No of Tynes   : 6</pre></li>
+                  <li class="centered"><pre>Tyne          : 7</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 58,000</h2>
+                  <h2>Rent: RS. 450 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
+            <p class="rice">2. Rice transplanter: This machine is used to transplant seedlings that have been grown in a nursery into the paddy field. </p>
+            <div>
+              <ul class="DPlanter">
+                  <li><button class="btn Pdc" onclick="showModal('4_Rows_Paddy_Transplanter')"><img src="./machinery_imges/Rice/Drawn_Planter/4 Rows Paddy Transplanter.png" alt="4 Rows Paddy Transplanter"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="4_Rows_Paddy_Transplanter" class="tddc1">
+            <div class="dialog-content ">
+              <img class="dp4rpt" src="./machinery_imges/Rice/Drawn_Planter/4 Rows Paddy Transplanter.png" alt="4 Rows Paddy Transplanter">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('4_Rows_Paddy_Transplanter')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">4 Rows Paddy Transplanter</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Power              : 3kW (4hp)</pre></li>
+                  <li class="centered"><pre>Fuel Tank Capacity : 4.5L</pre></li>
+                  <li class="centered"><pre>Fuel Consumption   : 500ml/hr</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 1,75,000</h2>
+                  <h2>Rent: RS. 550 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+          <h4>Note: It can be done in two different ways.</h4>
 
             <h4>5. Weeding</h4>
             <p class="rice">Power tiller-operated weeders: These are machines that use rotating blades to cut weeds between the rice plants. </p>
 
-            <h4>6. Fertilizer Application</h4>
-            <p class="rice">Deep placement applicators: These are machines that inject fertilizer into the soil at a specific depth, which can improve fertilizer efficiency and reduce waste. </p>
+            <div>
+              <ul class="R_Weeding">
+                  <li><button class="btn Pdc" onclick="showModal('Weeding')"><img src="./machinery_imges/Rice/Weeding/Honda F300 Metal Motorized Weeder.jpg" alt="Honda F300 Metal Motorized Weeder"></button></li>
+              </ul>
+          </div> 
 
-            <h4>7. Plant Protection</h4>
-            <p class="rice">Power sprayers: These are machines that use a pump to apply herbicides, pesticides, and fungicides to crops. </p>
+          <dialog id="Weeding" class="hfmw">
+            <div class="dialog-content ">
+              <img src="./machinery_imges/Rice/Weeding/Honda F300 Metal Motorized Weeder.jpg" alt="Honda F300 Metal Motorized Weeder">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('Weeding')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">Honda F300 Metal Motorized Weeder</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Continuous running hours : 2.5hr</pre></li>
+                  <li class="centered"><pre>Fuel Tank Capacity       : 1.4 liter</pre></li>
+                  <li class="centered"><pre>Engine Oil Capacity      : 0.36 lt/h</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 62,000</h2>
+                  <h2>Rent: RS. 450 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
 
-            <h4>8. Harvesting</h4>
+            <h4>6. Harvesting</h4>
             <p class="rice">Combine harvester: This is a machine that cuts, threshes, and cleans rice in one pass. While not yet widespread in eastern India, it is becoming increasingly common. </p>
 
-            <h4>9. Threshing</h4>
+            <div>
+              <ul class="Panesar">
+                  <li><button class="btn Pdc" onclick="showModal('Panesar_G_60')"><img  src="./machinery_imges/Rice/Harvesting/Panesar G 60.png" alt="Panesar G 60"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="Panesar_G_60">
+            <div class="dialog-content ">
+              <img class= "pg60" src="./machinery_imges/Rice/Harvesting/Panesar G 60.png" alt="Panesar G 60">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('Panesar_G_60')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog pang60">
+                    <h1 class="centered1 ">Panesar G 60 Combine Harvester</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Cutting Width       : 8.5 feet </pre></li>
+                  <li class="centered"><pre>Power               : 74 HP </pre></li>
+                  <li class="centered"><pre>Grain Tank Capacity :1200 Kg</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 20,00,000</h2>
+                  <h2>Rent: RS. 2000 per hour</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
+            <h4>7. Threshing</h4>
             <p class="rice">Power-operated axial flow threshers: These are machines that use a rotating drum to thresh rice, separating the grains from the straw. </p>
 
-            <h4>10. Straw Management Machinery</h4>
-            <p class="rice">Straw chopper-cum-spreader: This machine chops up rice straw and spreads it evenly over the field, where it can decompose and improve soil fertility. </p>
-            <p class="rice">Happy seeder: This is a machine that can sow wheat seeds directly into standing rice straw, eliminating the need for tillage and reducing labor costs. </p>
+            <div>
+              <ul class="Panesar">
+                  <li><button class="btn Pdc" onclick="showModal('agriculture-paddy-thresher')"> <img src="./machinery_imges/Rice/Threshing/agriculture-paddy-thresher.png" alt="agriculture paddy thresher">
+              </ul>
+          </div> 
+
+          <dialog id="agriculture-paddy-thresher">
+            <div class="dialog-content apt10 ">
+              <img class= "apt" src="./machinery_imges/Rice/Threshing/agriculture-paddy-thresher.png" alt="agriculture paddy thresher">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('agriculture-paddy-thresher')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog pang60 apt10">
+                    <h1 class="centered1 "> Agriculture Paddy Thresher</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Power          : 10 HP </pre></li>
+                  <li class="centered"><pre>Number of Fans : 3 Fans</pre></li>
+                  <li class="centered"><pre>Capacity       : 1000 kg/hr </pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 2,40,000</h2>
+                  <h2>Rent: RS. 3000 per acre along with an instructor and worker</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
 
         </div>
         
