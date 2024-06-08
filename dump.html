@@ -3,92 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Example</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: black;
-            color: orange;
-            text-align: center;
+            color: white;
             font-family: Arial, sans-serif;
         }
-        dialog {
-            border: none;
-            background-color: transparent;
-            padding: 0;
-            width: 79%;
-            height: 80%;
-            margin: 50;
-            position: relative;
-        }
-        .dialog-content {
-            background-color: #000;
-            padding: 20px;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-        }
-        dialog img {
-            max-width: 50%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .details {
+
+        .tab-container {
             text-align: center;
-        }
-        .details p, .details h2, .details h1 {
-            margin: 5px 0;
-        }
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-        .button-container {
             margin-top: 20px;
         }
-        .button-container button {
-            padding: 10px 20px;
-            background-color: orange;
-            color: black;
+
+        .tab {
+            display: inline-block;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab button {
+            background-color: inherit;
             border: none;
-            border-radius: 5px;
+            outline: none;
             cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s
+        }
+
+        .tab button:hover {
+            background-color: #555;
+        }
+
+        .tab button:focus,
+        .tab button.active {
+            background-color: #333;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            color: black;
+            background-color: white;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 4px;
         }
     </style>
-    <title>New Holland 3630</title>
 </head>
 <body>
-    <dialog id="powertrac">
-        <div class="dialog-content">
-            <button class="close" onclick="closeModal('powertrac')">✕</button>
-            <img src="./machinery_imges/Tractors/POWERTRAC_STEELTRAC.png" alt="NEW HOLLAND 3630">
-            <div class="details">
-                <h1>NEW HOLLAND 3630</h1>
-                <p>Power: 50 HP</p>
-                <p>Weight: 2000 kg</p>
-                <p>Engine: 2800 cc</p>
-                <p>Warranty: 2 years</p>
-                <h2>Price: Rs. 7,10,000</h2>
-                <h2>Rent: RS. 800 per day</h2>
-                <div class="button-container">
-                    <button>CONNECT US</button>
-                </div>
-            </div>
-        </div>
-    </dialog>
 
-    <script>
-        function closeModal(id) {
-            document.getElementById(id).close();
+<div class="tab-container">
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Rice')" id="defaultOpen">Rice</button>
+        <button class="tablinks" onclick="openTab(event, 'Chillies')">Chillies</button>
+        <button class="tablinks" onclick="openTab(event, 'Greengram')">Greengram (Moong Dal)</button>
+        <button class="tablinks" onclick="openTab(event, 'Blackgram')">Blackgram (Urad Dal)</button>
+    </div>
+</div>
+
+<div id="Rice" class="tabcontent">
+    <h3>Rice</h3>
+    <p>Rice is a staple food for many cultures.</p>
+</div>
+
+<div id="Chillies" class="tabcontent">
+    <h3>Chillies</h3>
+    <p>Chillies are used to add heat to dishes.</p>
+</div>
+
+<div id="Greengram" class="tabcontent">
+    <h3>Greengram (Moong Dal)</h3>
+    <p>Greengram is a type of legume.</p>
+</div>
+
+<div id="Blackgram" class="tabcontent">
+    <h3>Blackgram (Urad Dal)</h3>
+    <p>Blackgram is commonly used in Indian cuisine.</p>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
         }
-    </script>
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 </html>
