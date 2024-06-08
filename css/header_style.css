@@ -111,7 +111,17 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: start;
+    background: var(--TEXTC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px;
+}
+
+h4 {
+    font-size: 1rem;
     margin: 1rem 0;
     text-align: start;
     background: #f20505;

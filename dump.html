@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <style>
         body {
             display: flex;
@@ -89,6 +90,124 @@
         function closeModal(id) {
             document.getElementById(id).close();
         }
+=======
+    <title>Tractors</title>
+    <style>
+        /* Centering the content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        ul.rice {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        ul.rice li {
+            margin: 10px;
+        }
+
+        ul.rice li img {
+            cursor: pointer;
+            max-width: 100px;
+            transition: transform 0.3s;
+        }
+
+        ul.rice li img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Dialog Styles */
+        .dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: left;
+        }
+
+        .dialog img {
+            max-width: 400px;
+        }
+
+        .dialog p {
+            margin: 10px 0;
+        }
+
+        .dialog-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .dialog-active .dialog,
+        .dialog-active .dialog-overlay {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Tractors</h2>
+        <p class="rice">Tractors are the most commonly used machinery in rice cultivation. They are used for various operations such as land preparation, planting, and harvesting. Tractors come in different sizes and power ratings to suit the needs of different farmers.</p>
+        <div>
+            <ul class="rice">
+                <li><img src="./machinery_images/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310" data-rent-price="50 USD/day" data-sell-price="20,000 USD"></li>
+                <li><img src="./machinery_images/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI" data-rent-price="45 USD/day" data-sell-price="18,000 USD"></li>
+                <li><img src="./machinery_images/Tractors/POWERTRAC_STEELTRAC.png" alt="NEW HOLLAND 3630" data-rent-price="55 USD/day" data-sell-price="22,000 USD"></li>
+                <li><img src="./machinery_images/Tractors/KUBOTA_NEOSTAR_B2441.png" alt="SONALIKA DI 750 III" data-rent-price="40 USD/day" data-sell-price="15,000 USD"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dialog-overlay"></div>
+    <div class="dialog"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var images = document.querySelectorAll('ul.rice li img');
+            var dialog = document.querySelector('.dialog');
+            var overlay = document.querySelector('.dialog-overlay');
+
+            images.forEach(function(image) {
+                image.addEventListener('click', function() {
+                    var altText = image.alt;
+                    var rentPrice = image.getAttribute('data-rent-price');
+                    var sellPrice = image.getAttribute('data-sell-price');
+
+                    dialog.innerHTML = `
+                        <img src="${image.src}" alt="${altText}">
+                        <p><strong>Model:</strong> ${altText}</p>
+                        <p><strong>Rent Price:</strong> ${rentPrice}</p>
+                        <p><strong>Selling Price:</strong> ${sellPrice}</p>
+                    `;
+                    document.body.classList.add('dialog-active');
+                });
+            });
+
+            overlay.addEventListener('click', function() {
+                document.body.classList.remove('dialog-active');
+            });
+        });
+>>>>>>> 4f247fc (Lost)
     </script>
 </body>
 </html>
