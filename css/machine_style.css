@@ -26,6 +26,10 @@ button {
     gap: 40px;
 }
 
+li {
+  list-style: none;
+}
+
 .tab-container {
     display: flex;
     justify-content: center;
@@ -57,7 +61,7 @@ p {
     padding-left: 100px;
 }
 
-.tractor, .Rotavator {
+.tractor, .Rotavator,.Sprayer {
     display: flex;
     background-color: #010101;
     flex-direction: row;
@@ -270,3 +274,19 @@ li {
   box-shadow:  0 0  0.75rem #F7C912;
 }
  */
+
+ .h1_all h1 {
+    margin-left: -10px;
+ }
+
+ .dip2 img {
+    filter: drop-shadow(0 0 0.75rem #c9c5c5);
+ }
+
+.Spra1 img {
+  filter: drop-shadow(0 0 0.75rem #FA6431);
+}
+
+.Spra2 img {
+  filter: drop-shadow(0 0 0.75rem #DFE0E4);
+}
