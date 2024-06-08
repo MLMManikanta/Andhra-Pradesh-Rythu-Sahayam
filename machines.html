@@ -36,7 +36,7 @@
         <h2>Tractors</h2>
             <p class="Tractors">They are the most commonly used machinery in rice cultivation. They are used for various operations such as land preparation, planting, and harvesting. Tractors come in different sizes and power ratings to suit the needs of different farmers.</p>
 
-            <div>
+            <div >
                 <ul class="tractor">
                     <li><button onclick="showModal('john')"><img src="./machinery_imges/Tractors/JOHN DEERE 5310.png" alt="JOHN DEERE 5310"></button></li>
                     <li><button onclick="showModal('mahindra')"><img src="./machinery_imges/Tractors/mahindra-575-DI-XP-Plus.png" alt="MAHINDRA 575 DI"></button></li> 
@@ -171,36 +171,15 @@
                     </div>
                   </dialog>
 
-        <div class="slider-container">
-            <div class="arrows left" onclick="scrollTabs('left')">
-                <img src="./arrow-left.png" alt="Left Arrow" width="50" height="50">
-            </div>
             <div class="tab-container">
                 <div class="tab">
                     <button class="tablinks" onclick="openTab(event, 'Rice')">Rice</button>
-                    <button class="tablinks" onclick="openTab(event, 'Groundnut')">Groundnut</button>
-                    <button class="tablinks" onclick="openTab(event, 'Sugarcane')">Sugarcane</button>
                     <button class="tablinks" onclick="openTab(event, 'Chillies')">Chillies</button>
-                    <button class="tablinks" onclick="openTab(event, 'Cotton')">Cotton</button>
-                    <button class="tablinks" onclick="openTab(event, 'Maize')">Maize</button>
-                    <button class="tablinks" onclick="openTab(event, 'Mango')">Mango</button>
-                    <button class="tablinks" onclick="openTab(event, 'Tobacco')">Tobacco</button>
-                    <button class="tablinks" onclick="openTab(event, 'Tomato')">Tomato</button>
-                    <button class="tablinks" onclick="openTab(event, 'Horsegram')">Horsegram (Kulthi/Kollu)</button>
                     <button class="tablinks" onclick="openTab(event, 'Greengram')">Greengram (Moong Dal)</button>
                     <button class="tablinks" onclick="openTab(event, 'Blackgram')">Blackgram (Urad Dal)</button>
-                    <button class="tablinks" onclick="openTab(event, 'Redgram')">Redgram (Arhar/Tur Dal)</button>
-                    <button class="tablinks" onclick="openTab(event, 'Bengalgram')">Bengalgram (Chana Dal)</button>
-                    <button class="tablinks" onclick="openTab(event, 'Cowgram')">Cowgram (Lobia/Black-eyed Pea)</button>
-                    <button class="tablinks" onclick="openTab(event, 'RajmaBeans')">Rajma Beans (Kidney Beans)</button>
-                    <button class="tablinks" onclick="openTab(event, 'AnumuluYam')">Anumulu Yam (Elephant Foot Yam)</button>
-                    <button class="tablinks" onclick="openTab(event, 'YerraPappu')">Yerra Pappu / Mysoor Pappu (Red Lentils)</button>
+                 
                 </div>
             </div>
-            <div class="arrows right" onclick="scrollTabs('right')">
-                <img src="./arrow-right.png" alt="Right Arrow" width="50" height="50">
-            </div>
-        </div>
     
         <div id="Rice" class="tabcontent">
             <h3>Rice</h3>
@@ -208,15 +187,14 @@
             <p class="rice">Rotavator: This machine is used for preparing the land for planting by breaking up the soil and mixing in residues. </p>
             <div>
               <ul class="Rotavator">
-                  <li><button onclick="showModal('Diesel_Power')"><img src="./machinery_imges/Rice/Rotavator/Diesel_Power_weeder.png" alt="JOHN DEERE 5310"></button></li>
-                  <li><button onclick="showModal('Rotavator_large')"><img src="./machinery_imges/Rice/Rotavator/Rotavator_large.png" alt="MAHINDRA 575 DI"></button></li> 
-                  <li><button onclick="showModal('Rotavator_small')"><img src="./machinery_imges/Rice/Rotavator/Rotavator_small.png" alt="SONALIKA DI 750 III"></button></li>
+                  <li><button class="btn" onclick="showModal('Diesel_Power')"><img src="./machinery_imges/Rice/Rotavator/Diesel_Power_weeder.png" alt="JOHN DEERE 5310"></button></li>
+                  <li><button class="btn" onclick="showModal('Rotavator_small')"><img src="./machinery_imges/Rice/Rotavator/Rotavator_small.png" alt="SONALIKA DI 750 III"></button></li>
               </ul>
           </div> 
 
-          <dialog id="Diesel_Power">
-            <div class="dialog-content">
-               <img src="./machinery_imges/Rice/Rotavator/Diesel_Power_weeder.png" alt="JOHN DEERE 5310">
+          <dialog id="Diesel_Power" class="rdc1">
+            <div class="dialog-content rdc">
+               <img class="rbtn dbtn rbtn1" src="./machinery_imges/Rice/Rotavator/Diesel_Power_weeder.png" alt="Diesel Power weeder">
               <div class="details">
                 <div>
                   <div class="close">
@@ -227,8 +205,8 @@
                   </div>
                 </div>
                 <ul class="center_main">
-                <li class="centered"><pre>Power             : 3   HP</pre></li>
-                <li class="centered"><pre>Fuel Consumption           : 0.75 - 1 Litre/Hour</pre></li>
+                <li class="centered"><pre>Power             : 3HP</pre></li>
+                <li class="centered"><pre>Fuel Consumption  : 0.75 - 1 Litre/Hour</pre></li>
                 </ul>
                 <div>
                     <div class="cost">
@@ -243,6 +221,34 @@
             </div>
           </dialog>
 
+          <dialog id="Rotavator_small">
+            <div class="dialog-content  ">
+               <img class="rbtn dbtn rbtn2" src="./machinery_imges/Rice/Rotavator/Rotavator_small.png" alt="Small Rotavator">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('Rotavator_small')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">Mahindra Rotavator</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                <li class="centered"><pre>Number of Blades : 20 Blades</pre></li>
+                <li class="centered"><pre>Tilling Width    : 4feet</pre></li>
+                </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 85,000</h2>
+                  <h2>Rent: RS. 450 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
 
             <h4>2. Puddling</h4>
             <p class="rice">Power tiller-mounted cono-puddlers: These are rotary tillers mounted on power tillers that are used to puddle the soil, which involves creating a wet, muddy layer that helps retain water and suppress weeds.</p>
@@ -275,49 +281,9 @@
 
         </div>
         
-        <div id="Groundnut" class="tabcontent">
-            <h3>Groundnut</h3>
-            <p>Information about Groundnut.</p>
-        </div>
-        
-        <div id="Sugarcane" class="tabcontent">
-            <h3>Sugarcane</h3>
-            <p>Information about Sugarcane.</p>
-        </div>
-        
         <div id="Chillies" class="tabcontent">
             <h3>Chillies</h3>
             <p>Information about Chillies.</p>
-        </div>
-        
-        <div id="Cotton" class="tabcontent">
-            <h3>Cotton</h3>
-            <p>Information about Cotton.</p>
-        </div>
-        
-        <div id="Maize" class="tabcontent">
-            <h3>Maize</h3>
-            <p>Information about Maize.</p>
-        </div>
-        
-        <div id="Mango" class="tabcontent">
-            <h3>Mango</h3>
-            <p>Information about Mango.</p>
-        </div>
-        
-        <div id="Tobacco" class="tabcontent">
-            <h3>Tobacco</h3>
-            <p>Information about Tobacco.</p>
-        </div>
-        
-        <div id="Tomato" class="tabcontent">
-            <h3>Tomato</h3>
-            <p>Information about Tomato.</p>
-        </div>
-        
-        <div id="Horsegram" class="tabcontent">
-            <h3>Horsegram (Kulthi/Kollu)</h3>
-            <p>Information about Horsegram (Kulthi/Kollu).</p>
         </div>
         
         <div id="Greengram" class="tabcontent">
@@ -330,113 +296,7 @@
             <p>Information about Blackgram (Urad Dal).</p>
         </div>
         
-        <div id="Redgram" class="tabcontent">
-            <h3>Redgram (Arhar/Tur Dal)</h3>
-            <p>Information about Redgram (Arhar/Tur Dal).</p>
-        </div>
         
-        <div id="Bengalgram" class="tabcontent">
-            <h3>Bengalgram (Chana Dal)</h3>
-            <p>Information about Bengalgram (Chana Dal).</p>
-        </div>
-        
-        <div id="Cowgram" class="tabcontent">
-            <h3>Cowgram (Lobia/Black-eyed Pea)</h3>
-            <p>Information about Cowgram (Lobia/Black-eyed Pea).</p>
-        </div>
-        
-        <div id="RajmaBeans" class="tabcontent">
-            <h3>Rajma Beans (Kidney Beans)</h3>
-            <p>Information about Rajma Beans (Kidney Beans).</p>
-        </div>
-        
-        <div id="AnumuluYam" class="tabcontent">
-            <h3>Anumulu Yam (Elephant Foot Yam)</h3>
-            <p>Information about Anumulu Yam (Elephant Foot Yam).</p>
-        </div>
-        
-        <div id="YerraPappu" class="tabcontent">
-            <h3>Yerra Pappu / Mysoor Pappu (Red Lentils)</h3>
-            <p>Information about Yerra Pappu / Mysoor Pappu (Red Lentils).</p>
-        </div>
-        
-        <h2>Trending Crops in Andhra Pradesh</h2>
-  <!--   <div class="slider-container">
-        <div class="arrows left" onclick="scrollTabs('left')">
-            <img src="./arrow-left.png" alt="Left Arrow" width="50" height="50">
-        </div> -->
-        <div class="tab-container ">
-            <div class="tab tab2">
-                <button class="tablinks" onclick="openTab(event, 'DragonFruit')">Dragon Fruit</button>
-                <button class="tablinks" onclick="openTab(event, 'Avocado')">Avocado</button>
-                <button class="tablinks" onclick="openTab(event, 'OrganicVegetables')">Organic Vegetables</button>
-                <button class="tablinks" onclick="openTab(event, 'Quinoa')">Quinoa</button>
-                <button class="tablinks" onclick="openTab(event, 'FingerMillet')">Finger Millet</button>
-                <button class="tablinks" onclick="openTab(event, 'PearlMillet')">Pearl Millet</button>
-                <button class="tablinks" onclick="openTab(event, 'OilPalm')">Oil Palm</button>
-                <button class="tablinks" onclick="openTab(event, 'Turmeric')">Turmeric</button>
-                <button class="tablinks" onclick="openTab(event, 'Stevia')">Stevia</button>
-            </div>
-        </div>
-      <!--   <div class="arrows right" onclick="scrollTabs('right')">
-            <img src="./arrow-right.png" alt="Right Arrow" width="50" height="50">
-        </div> -->
-    </div>
-    
-    <div id="DragonFruit" class="tabcontent">
-        <!-- Content for Dragon Fruit tab -->
-        <h3>Dragon Fruit</h3>
-        <p>Information about Dragon Fruit.</p>
-    </div>
-    
-    <div id="Avocado" class="tabcontent">
-        <!-- Content for Avocado tab -->
-        <h2>Avocado</h2>
-        <p>Information about Avocado.</p>
-    </div>
-    
-    <div id="OrganicVegetables" class="tabcontent">
-        <!-- Content for Organic Vegetables tab -->
-        <h2>Organic Vegetables</h2>
-        <p>Information about Organic Vegetables.</p>
-    </div>
-    
-    <div id="Quinoa" class="tabcontent">
-        <!-- Content for Quinoa tab -->
-        <h2>Quinoa</h2>
-        <p>Information about Quinoa.</p>
-    </div>
-    
-    <div id="FingerMillet" class="tabcontent">
-        <!-- Content for Finger Millet tab -->
-        <h2>Finger Millet</h2>
-        <p>Information about Finger Millet.</p>
-    </div>
-    
-    <div id="PearlMillet" class="tabcontent">
-        <!-- Content for Pearl Millet tab -->
-        <h2>Pearl Millet</h2>
-        <p>Information about Pearl Millet.</p>
-    </div>
-    
-    <div id="OilPalm" class="tabcontent">
-        <!-- Content for Oil Palm tab -->
-        <h2>Oil Palm</h2>
-        <p>Information about Oil Palm.</p>
-    </div>
-    
-    <div id="Turmeric" class="tabcontent">
-        <!-- Content for Turmeric tab -->
-        <h2>Turmeric</h2>
-        <p>Information about Turmeric.</p>
-    </div>
-    
-    <div id="Stevia" class="tabcontent">
-        <!-- Content for Stevia tab -->
-        <h2>Stevia</h2>
-        <p>Information about Stevia.</p>
-    </div>
-
     </main>
     <script src="./index.js"></script>
     <script src="./machines.js"></script>

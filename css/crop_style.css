@@ -36,11 +36,12 @@ table {
     background: var(--TEXTC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: -90px;
   }
 
 
   th, td {
-    border: 10px solid #fff;
+    border: 10px solid #7e7b7baf;
     padding: 8px;
     width: 500px;
     text-align: left;
@@ -62,3 +63,16 @@ table {
   td:nth-child(1) {
     font-size: 2em;
   }
+
+  .chilli {
+    filter: drop-shadow(0 0 0.75rem #BB1816);
+  }
+
+  img.greengram {
+    filter: drop-shadow(0 0 0.75rem #908d2d);
+}
+
+img.BGC {
+    filter: drop-shadow(0 0 0.75rem #7E7B7B);
+}
+
