@@ -62,7 +62,7 @@ body {
 
 ul {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -149,14 +149,27 @@ p {
 
 .drive_h3 h3 {
     text-align: start;
+    margin-left: -1px;
+}
+
+.drive_li ul li p a{
+    text-decoration: underline;
+    
+}
+.tractor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.Machineries_h3 {
+    text-align: start;
     margin-left: -100px;
 }
-
-.drive_li li {
-    margin: 0rem;
-}
-
-
 
 /* footer */
 footer {

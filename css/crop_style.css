@@ -16,6 +16,10 @@ body {
     --TEXTC: linear-gradient(8deg, rgba(247,201,18,1) 22%, rgba(255,154,0,1) 100%);
 }
 
+main {
+  margin: 0 50px;
+}
+
 p {
   color: #FEDF42;
   font-size: 1.35rem;
