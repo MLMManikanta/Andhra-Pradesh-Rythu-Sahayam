@@ -131,11 +131,32 @@ h4 {
 p {
     font-size: 1rem;
     margin: 1rem 0;
-    background: var(--TEXTC);
+    background: #f7c912;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 3px;
+    color: #fff;
 }
+
+.h2-center h2 {
+    text-align: center;
+}
+
+.main_content_index {
+    margin: 0 100px;
+
+}
+
+.drive_h3 h3 {
+    text-align: start;
+    margin-left: -100px;
+}
+
+.drive_li li {
+    margin: 0rem;
+}
+
+
 
 /* footer */
 footer {
