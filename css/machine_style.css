@@ -289,3 +289,15 @@ li {
 .Spra2 img {
   filter: drop-shadow(0 0 0.75rem #DFE0E4);
 }
+
+.chi_tran img {
+  filter: drop-shadow(0 0 0.75rem #43BC6E);
+}
+
+.chi_tran h1 {
+  margin-left: -100px;
+}
+
+.ch_mh img {
+  filter: drop-shadow(0 0 0.75rem #D54253);
+}

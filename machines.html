@@ -172,8 +172,8 @@
 
                   <div class="tab-container">
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'Rice')" id="defaultOpen">Rice</button>
-                        <button class="tablinks" onclick="openTab(event, 'Chillies')">Chillies</button>
+                        <button class="tablinks" onclick="openTab(event, 'Rice')" id="defaultOpen" >Rice</button>
+                        <button class="tablinks" onclick="openTab(event, 'Chillies')" >Chillies</button>
                         <button class="tablinks" onclick="openTab(event, 'Greengram')">Greengram (Moong Dal)</button>
                         <button class="tablinks" onclick="openTab(event, 'Blackgram')">Blackgram (Urad Dal)</button>
                     </div>
@@ -524,6 +524,226 @@
         
         <div id="Chillies" class="tabcontent">
             <h3>Chillies</h3>
+
+            <h4>Planting:</h4>
+            <p>Seed Drill/Planter: For precise sowing of chili seeds at the correct depth and spacing.</p>
+            <div>
+              <ul class="DPlanter">
+                  <li><button class="btn Pdc" onclick="showModal('Drawn_Planter1')"><img src="./machinery_imges/Rice/Drawn_Planter/Rohit Krishi RIPLP0790 Tractor Drawn Planter.png" alt="Tractor Drawn Planter"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="Drawn_Planter1" class="tddc1">
+            <div class="dialog-content ">
+              <img class="rktdp" src="./machinery_imges/Rice/Drawn_Planter/Rohit Krishi RIPLP0790 Tractor Drawn Planter.png" alt="Tractor Drawn Planter">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('Drawn_Planter1')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog">
+                    <h1 class="centered1">Semi Automatic Tractor Drawn Planter</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Power         : 35HP</pre></li>
+                  <li class="centered"><pre>No of Tynes   : 6</pre></li>
+                  <li class="centered"><pre>Tyne          : 7</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 58,000</h2>
+                  <h2>Rent: RS. 450 per day</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
+            <p>Transplanter: Used for transplanting chili seedlings from nurseries to the field.</p>
+            <div>
+              <ul class="DPlanter">
+                <li><button class="btn Pdc" onclick="showModal('Chillies_Transplanter')"><img src="./machinery_imges/chilli/Transplanter/Transplanter.png" alt="Chillies Transplanter"></button></li>
+              </ul>
+             </div> 
+
+      <dialog id="Chillies_Transplanter" class="tddc1">
+        <div class="dialog-content chi_tran ">
+          <img class="dp4rpt" src="./machinery_imges/chilli/Transplanter/Transplanter.png" alt="Chillies Transplanter">
+          <div class="details">
+            <div>
+              <div class="close">
+                <button onclick="closeModal('Chillies_Transplanter')">✕</button>
+              </div>
+              <div class="inside_the_dialog chi_tran">
+                <h1 class="centered1"> Chili Transplanting Machine</h1>
+              </div>
+            </div>
+            <ul class="center_main">
+              <li class="centered"><pre>Seedling height : 200mm</pre></li>
+              <li class="centered"><pre>Operators       : 1</pre></li>
+              </ul>
+            <div>
+                <div class="cost">
+              <h2>Price: Rs. 2,75,000</h2>
+              <h2>Rent: RS. 500 per day</h2>
+            </div>
+              <div>
+                <button class="ctus">CONNECT US</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <h4>Note: It can be done in two different ways.</h4>
+        
+            <h4>Irrigation:</h4>
+            <p>Drip Irrigation System: Delivers water directly to the roots, conserving water and reducing weed growth.</p>
+            <div>
+              <ul class="DPlanter">
+                  <li><button class="btn Pdc" onclick="showModal('CDIP')"><img src="./machinery_imges/gram/Drip_Irrigation_Pipe_20mm.png" alt="Drip Irrigation Pipe"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="CDIP" class="tddc1">
+            <div class="dialog-content dip2" >
+              <img  src="./machinery_imges/gram/Drip_Irrigation_Pipe_20mm.png" alt="Drip Irrigation Pipe">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('CDIP')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog h1_all">
+                    <h1 class="centered1 ">AGRITECH 20mm Drip Irrigation Pipe</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Drip Emitter Flow Rates :70 lph</pre></li>
+                  <li class="centered"><pre>Maximum Flow Rate       :1 GPH</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 1000 for every 100 Meters</h2>
+                  <h2>Rent: RS. 25 per day for every 100 meters</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+        
+            <h4>Pest and Disease Control:</h4>
+            <p>Boom Sprayer: For spraying pesticides and fungicides over large areas.</p>
+
+            <div>
+              <ul class="Sprayer">
+                  <li><button class="btn" onclick="showModal('CSprayer_1')"><img src="./machinery_imges/gram/Sprayer/NEPTUNE_SIMPLIFY_FARMING.png" alt="NEPTUNE SIMPLIFY FARMING"></button></li>
+                  <li><button class="btn" onclick="showModal('CSprayer_2')"><img src="./machinery_imges/gram/Sprayer/Neptune_Knapsack.png" alt="Neptune_Knapsack"></button></li>
+              </ul>
+          </div> 
+
+          <dialog id="CSprayer_1" class="tddc1">
+            <div class="dialog-content Spra1" >
+              <img src="./machinery_imges/gram/Sprayer/NEPTUNE_SIMPLIFY_FARMING.png" alt="NEPTUNE SIMPLIFY FARMING">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('CSprayer_1')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog h1_all">
+                    <h1 class="centered1 ">Neptune Simplify- Battery Operated</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Capacity : 16 L</pre></li>
+                  <li class="centered"><pre>Weight   : 4.5 Kg</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 5000</h2>
+                  <h2>Rent: RS. 20 per hour</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+
+          <dialog id="CSprayer_2" class="tddc1">
+            <div class="dialog-content Spra2" >
+              <img src="./machinery_imges/gram/Sprayer/Neptune_Knapsack.png" alt="Neptune_Knapsack">
+              <div class="details">
+                <div>
+                  <div class="close">
+                    <button onclick="closeModal('CSprayer_2')">✕</button>
+                  </div>
+                  <div class="inside_the_dialog h1_all">
+                    <h1 class="centered1 ">Neptune Power Sprayer NF -708</h1>
+                  </div>
+                </div>
+                <ul class="center_main">
+                  <li class="centered"><pre>Capacity : 20 L</pre></li>
+                  <li class="centered"><pre>Weight   : 2.5 Kg</pre></li>
+                  </ul>
+                <div>
+                    <div class="cost">
+                  <h2>Price: Rs. 11,000</h2>
+                  <h2>Rent: RS. 50 per hour</h2>
+                </div>
+                  <div>
+                    <button class="ctus">CONNECT US</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dialog>
+        
+            <h4>Harvesting:</h4>
+            <p>Mechanical Harvesters: Although less common, some specialized machinery can be used for large-scale harvesting.</p>
+            div>
+            <ul class="Panesar">
+                <li><button class="btn Pdc" onclick="showModal('CHarvesting')"><img  src="./machinery_imges/chilli/Harvesting/Mechanical_Harvesters.png" alt="Mechanical Harvesters"></button></li>
+                  </ul>
+              </div> 
+
+              <dialog id="CHarvesting">
+                <div class="dialog-content ch_mh ">
+                  <img  class= "pg60" src="./machinery_imges/chilli/Harvesting/Mechanical_Harvesters.png" alt="Mechanical Harvesters">
+                  <div class="details">
+                    <div>
+                      <div class="close">
+                        <button onclick="closeModal('CHarvesting')">✕</button>
+                      </div>
+                      <div class="inside_the_dialog pang60">
+                        <h1 class="centered1 ">Chili peper harvester machine</h1>
+                      </div>
+                    </div>
+                    <ul class="center_main">
+                      <li class="centered"><pre>Power               : 140 HP </pre></li>
+                      <li class="centered"><pre>Grain Tank Capacity : 2500 Kg</pre></li>
+                      </ul>
+                    <div>
+                        <div class="cost">
+                      <h2>Price: Rs. 35,00,000</h2>
+                      <h2>Rent: RS. 2500 per hour</h2>
+                    </div>
+                      <div>
+                        <button class="ctus">CONNECT US</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </dialog>
+      </div>
+
+
 
         </div>
 
@@ -985,6 +1205,12 @@
         </div>
       
     </main>
+    
+    <footer>
+      <div>
+          <h2>&copy; 2024 Andhra Pradesh Rithu Sahayam. All rights reserved.</h2>
+      </div>
+  </footer>
     <script src="./index.js"></script>
     <script src="./machines.js"></script>
 </body>
