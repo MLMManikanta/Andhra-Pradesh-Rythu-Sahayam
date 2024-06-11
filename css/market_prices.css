@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #010101;
+}
+
+:root {
+    --TEXTC: linear-gradient(8deg, #f7c912 22%, rgba(255,154,0,1) 100%);
+    --BACKCO: linear-gradient(8deg, #7e7b7b67 100%, rgba(189, 184, 178, 0.76) 22%);
+    --BACKCO1: linear-gradient(8deg, rgb(247, 201, 18) 100%, rgba(255, 153, 0, 0.978) 22%);
+}
+
+button {
+    background: var(--TEXTC);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+/* tab controls */
+.tab-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+    background: var(--BACKCO);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.btn img {
+  width: 500px;
+  height: 500px;
+}

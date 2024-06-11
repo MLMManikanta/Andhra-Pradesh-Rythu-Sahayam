@@ -3,103 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab Example</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-
-        .tab-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .tab {
-            display: inline-block;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .tab button {
-            background-color: inherit;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s
-        }
-
-        .tab button:hover {
-            background-color: #555;
-        }
-
-        .tab button:focus,
-        .tab button.active {
-            background-color: #333;
-        }
-
-        .tabcontent {
-            display: none;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-top: none;
-            color: black;
-            background-color: white;
-            max-width: 600px;
-            margin: 20px auto;
-            border-radius: 4px;
-        }
-    </style>
+    <title>Andhra Pradesh Rithu Sahayam</title>
+    <link rel="icon" href="./logo1.png" type="image/png">
+    <link rel="stylesheet" href="css/header_style.css">
+    <link rel="stylesheet" href="./css/market_prices.css">
 </head>
 <body>
+    <a href="#main" class="btn skip-link">Skip to main content</a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./logo1.png" alt="Company Logo" width="200" height="150">
+                </a>
+            </div>
+            <nav aria-label="Contextual menu">
+                <ul class="menu">
+                    <li class="menu-item"><a href="./crops.html">Crops</a></li>
+                    <li class="menu-item" id="machines-dropdown">
+                        <a href="./machines.html">Machines</a>
+                    </li>
+                    <li class="menu-item"><a href="./market-prices.html">Market Prices</a></li>
+                    <li class="menu-item"><a href="./farmer-adopt.html">Farmer Adopt</a></li>
+                    <li class="menu-item"><a href="./about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="tab-container">
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Rice')" id="defaultOpen">Rice</button>
-        <button class="tablinks" onclick="openTab(event, 'Chillies')">Chillies</button>
-        <button class="tablinks" onclick="openTab(event, 'Greengram')">Greengram (Moong Dal)</button>
-        <button class="tablinks" onclick="openTab(event, 'Blackgram')">Blackgram (Urad Dal)</button>
-    </div>
-</div>
+    <main class="main_content" id="main">
+        <div class="tab-container1">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Rice')" id="defaultOpen">Rice</button>
+                <button class="tablinks" onclick="openTab(event, 'Chillies')">Chillies</button>
+                <button class="tablinks" onclick="openTab(event, 'Greengram')">Greengram (Moong Dal)</button>
+                <button class="tablinks" onclick="openTab(event, 'Blackgram')">Blackgram (Urad Dal)</button>
+            </div>
+        </div>
+        <div class="tabcontent" id="Rice">
+            <h2>Rice Varieties in Andhra Pradesh</h2>
+            <div class="rice-variety">
+                <h2>1. Srikakulam</h2>
+                <p><strong>Kurnool Sona Masuri</strong>: A fine-grain rice variety known for its aroma and taste. Price: ₹50/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Sona_masuri_rice.jpg/220px-Sona_masuri_rice.jpg" alt="Kurnool Sona Masuri">
+                <p><strong>MTU 1010 (Cotton Dora Sannalu)</strong>: A high-yield variety with good cooking qualities. Price: ₹45/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/MTU_1010.jpg/220px-MTU_1010.jpg" alt="MTU 1010">
+            </div>
+            <div class="rice-variety">
+                <h2>2. Vizianagaram</h2>
+                <p><strong>Chitti Muthyalu</strong>: Known for its small, fine grains and excellent taste. Price: ₹60/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chitti_Mutyalu.jpg/220px-Chitti_Mutyalu.jpg" alt="Chitti Muthyalu">
+                <p><strong>Nellore Sannalu</strong>: A fine grain rice with a unique taste. Price: ₹55/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Nellore_Sannalu.jpg/220px-Nellore_Sannalu.jpg" alt="Nellore Sannalu">
+            </div>
+            <div class="rice-variety">
+                <h2>3. Visakhapatnam</h2>
+                <p><strong>BPT 5204 (Samba Masuri)</strong>: A popular variety with slender grains and a distinctive aroma. Price: ₹52/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Samba_Masuri_Rice.jpg/220px-Samba_Masuri_Rice.jpg" alt="BPT 5204">
+                <p><strong>HMT Rice</strong>: A popular medium-grain variety with good cooking properties. Price: ₹48/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/HMT_rice.jpg/220px-HMT_rice.jpg" alt="HMT Rice">
+            </div>
+            <div class="rice-variety">
+                <h2>4. East Godavari</h2>
+                <p><strong>Ponni Rice</strong>: Known for its softness, it’s a favored variety in South Indian cuisine. Price: ₹65/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ponni_rice.jpg/220px-Ponni_rice.jpg" alt="Ponni Rice">
+                <p><strong>Swarna Rice</strong>: Medium-grain rice that’s affordable and commonly used. Price: ₹40/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Swarna_rice.jpg/220px-Swarna_rice.jpg" alt="Swarna Rice">
+            </div>
+            <div class="rice-variety">
+                <h2>5. West Godavari</h2>
+                <p><strong>Swarna Rice</strong>: Medium-grain rice that’s affordable and commonly used. Price: ₹40/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Swarna_rice.jpg/220px-Swarna_rice.jpg" alt="Swarna Rice">
+                <p><strong>IR 64</strong>: A high-yielding, medium-grain rice variety often cultivated in this area. Price: ₹42/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/IR_64.jpg/220px-IR_64.jpg" alt="IR 64">
+            </div>
+            <div class="rice-variety">
+                <h2>6. Krishna</h2>
+                <p><strong>HMT Rice</strong>: A popular medium-grain variety with good cooking properties. Price: ₹48/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/HMT_rice.jpg/220px-HMT_rice.jpg" alt="HMT Rice">
+                <p><strong>BPT 5204 (Samba Masuri)</strong>: A popular variety with slender grains and a distinctive aroma. Price: ₹52/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Samba_Masuri_Rice.jpg/220px-Samba_Masuri_Rice.jpg" alt="BPT 5204">
+            </div>
+            <div class="rice-variety">
+                <h2>7. Guntur</h2>
+                <p><strong>Basmati Rice</strong>: Known for its long grains and aromatic flavor, it’s often used in special dishes. Price: ₹80/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Basmati_Rice.jpg/220px-Basmati_Rice.jpg" alt="Basmati Rice">
+                <p><strong>Kurnool Sona Masuri</strong>: A fine-grain rice variety known for its aroma and taste. Price: ₹50/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Sona_masuri_rice.jpg/220px-Sona_masuri_rice.jpg" alt="Kurnool Sona Masuri">
+            </div>
+            <div class="rice-variety">
+                <h2>8. Prakasam</h2>
+                <p><strong>Nellore Sannalu</strong>: A fine grain rice with a unique taste. Price: ₹55/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Nellore_Sannalu.jpg/220px-Nellore_Sannalu.jpg" alt="Nellore Sannalu">
+                <p><strong>MTU 1010 (Cotton Dora Sannalu)</strong>: A high-yield variety with good cooking qualities. Price: ₹45/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/MTU_1010.jpg/220px-MTU_1010.jpg" alt="MTU 1010">
+            </div>
+        </div>
 
-<div id="Rice" class="tabcontent">
-    <h3>Rice</h3>
-    <p>Rice is a staple food for many cultures.</p>
-</div>
+        <div class="tabcontent" id="Chillies">
+            <h2>Chilli Varieties in Andhra Pradesh</h2>
+            <div class="chilli-variety">
+                <h2>1. Guntur Sannam</h2>
+                <p><strong>Guntur Sannam</strong>: Known for its pungency and deep red color. Price: ₹120/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Guntur_Sannam.jpg/220px-Guntur_Sannam.jpg" alt="Guntur Sannam">
+            </div>
+            <div class="chilli-variety">
+                <h2>2. Byadgi Chilli</h2>
+                <p><strong>Byadgi Chilli</strong>: Known for its wrinkled appearance and moderate spiciness. Price: ₹100/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Byadgi_Chilli.jpg/220px-Byadgi_Chilli.jpg" alt="Byadgi Chilli">
+            </div>
+            <div class="chilli-variety">
+                <h2>3. Warangal Chappatta</h2>
+                <p><strong>Warangal Chappatta</strong>: Known for its high heat level and bright red color. Price: ₹130/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Warangal_Chappatta.jpg/220px-Warangal_Chappatta.jpg" alt="Warangal Chappatta">
+            </div>
+            <div class="chilli-variety">
+                <h2>4. Madhya Pradesh 334</h2>
+                <p><strong>Madhya Pradesh 334</strong>: Known for its color and pungency. Price: ₹110/kg</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/MP_334.jpg/220px-MP_334.jpg" alt="Madhya Pradesh 334">
+            </div>
+        </div>
 
-<div id="Chillies" class="tabcontent">
-    <h3>Chillies</h3>
-    <p>Chillies are used to add heat to dishes.</p>
-</div>
+        
 
-<div id="Greengram" class="tabcontent">
-    <h3>Greengram (Moong Dal)</h3>
-    <p>Greengram is a type of legume.</p>
-</div>
+    </main>
 
-<div id="Blackgram" class="tabcontent">
-    <h3>Blackgram (Urad Dal)</h3>
-    <p>Blackgram is commonly used in Indian cuisine.</p>
-</div>
-
-<script>
-    function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-    document.getElementById("defaultOpen").click();
-</script>
-
+    <script>
+     
+    </script>
 </body>
 </html>
