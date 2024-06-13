@@ -70,7 +70,7 @@ ul {
 .menu li {
     margin: 5px;
     padding: 5px;
-    background: linear-gradient(to top, #FFC107 30%, #169347);
+    background: linear-gradient(to top, #FFC107 10%, #169347 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5em;

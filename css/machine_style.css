@@ -83,6 +83,12 @@ dialog {
     filter: drop-shadow(0 0 00.75rem #F7C912);
   }
 
+  .tab_controls .tablinks {
+    font-size: 2rem;
+    margin: 5px;
+  }
+  
+
   .dialog-content {
     background-color: #000;
     padding: 20px;

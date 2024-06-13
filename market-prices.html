@@ -35,9 +35,9 @@
         <h1>Market Prices</h1>
 
         <div class="tab-container">
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Rice1')" id="defaultOpen1">Rice</button>
-                <button class="tablinks" onclick="openTab(event, 'Chillies1')">Chillies</button>
+            <div class="tab tab_controls">
+                <button class="tablinks" onclick="openTab(event, 'Rice1')"  >Rice</button>
+                <button class="tablinks" onclick="openTab(event, 'Chillies1')" id="defaultOpen1" >Chillies</button>
                 <button class="tablinks" onclick="openTab(event, 'Greengram')">Greengram (Moong Dal)</button>
                 <button class="tablinks" onclick="openTab(event, 'Blackgram')">Blackgram (Urad Dal)</button>
             </div>
@@ -45,74 +45,35 @@
 
         <div class="tabcontent" id="Rice1">
             <h2>Rice Varieties in Andhra Pradesh</h2>
-            <div class="rice-variety market_prices_all">
-                <h2>1. Srikakulam</h2>
-                <p><strong>Kurnool Sona Masuri</strong>: A fine-grain rice variety known for its aroma and taste.</p>
-                <img src="./Market_Prices/Rice/Sona Masoori Rice.jpg" alt="Kurnool Sona Masuri">
-                <p>Price: ₹50/kg</p>
-                <p><strong>MTU 1010 (Cotton Dora Sannalu)</strong>: A high-yield variety with good cooking qualities.</p>
+
+            <p><strong>MTU 1010 (Cotton Dora Sannalu)</strong>: A high-yield variety with good cooking qualities.</p>
+            <div class="all_market"> 
                 <img src="./Market_Prices/Rice/Cotton Dora Sannalu.png" alt="MTU 1010">
-                <p>Price: ₹45/kg</p>
+                <button class="CustoO">connect us to order</button>
             </div>
-            <div class="rice-variety market_prices_all">
-                <h2>2. Vizianagaram</h2>
-                <p><strong>Chitti Muthyalu</strong>: Known for its small, fine grains and excellent taste. </p>
-                <img src="./Market_Prices/Rice/Chitti Muthyalu.png" alt="Chitti Muthyalu">
-                <p>Price: ₹60/kg</p>
-                <p><strong>Nellore Sannalu</strong>: A fine grain rice with a unique taste. </p>
+            <p class="Prices">Price: ₹45/kg</p>
+            
+            <p><strong>Kurnool Sona Masuri</strong>: A fine-grain rice variety known for its aroma and taste.</p>
+            <div class="all_market"> 
+                <img src="./Market_Prices/Rice/Sona Masoori Rice.jpg" alt="Kurnool Sona Masuri">
+                <button class="CustoO" >connect us to order</button>
+            </div>
+            <p class="Prices" >Price: ₹50/kg</p>
+
+            <p><strong>Nellore Sannalu</strong>: A fine grain rice with a unique taste.</p>
+            <div class="all_market">
                 <img src="./Market_Prices/Rice/Nellore Sannalu.png" alt="Nellore Sannalu">
-                <p>Price: ₹55/kg</p>
+                <button class="CustoO">connect us to order</button>
             </div>
-            <div class="rice-variety market_prices_all">
-                <h2>3. Visakhapatnam</h2>
-                <p><strong>BPT 5204 (Samba Masuri)</strong>: A popular variety with slender grains and a distinctive aroma.</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Samba_Masuri_Rice.jpg/220px-Samba_Masuri_Rice.jpg" alt="BPT 5204">
-                <p>Price: ₹52/kg</p>
+            <p class="Prices">Price: ₹55/kg</p>
+
+            <p><strong>Chitti Muthyalu</strong>: Known for its small, fine grains and excellent taste.</p>
+            <div class="all_market">
+                <img src="./Market_Prices/Rice/Chitti Muthyalu.png" alt="Chitti Muthyalu">
+                <button class="CustoO">connect us to order</button>
             </div>
-            <div class="rice-variety market_prices_all">
-                <h2>4. East Godavari</h2>
-                <p><strong>Ponni Rice</strong>: Known for its softness, it’s a favored variety in South Indian cuisine. </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ponni_rice.jpg/220px-Ponni_rice.jpg" alt="Ponni Rice">
-                <p>Price: ₹55/kg</p>
-                <p><strong>Swarna Rice</strong>: Medium-grain rice that’s affordable and commonly used. </p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Swarna_rice.jpg/220px-Swarna_rice.jpg" alt="Swarna Rice">
-                <p>Price: ₹40/kg</p>
-            </div>
-            <div class="rice-variety market_prices_all">
-                <h2>5. West Godavari</h2>
-                <p><strong>Swarna Rice</strong>: Medium-grain rice that’s affordable and commonly used. Price: ₹40/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Swarna_rice.jpg/220px-Swarna_rice.jpg" alt="Swarna Rice">
-                <p><strong>IR 64</strong>: A high-yielding, medium-grain rice variety often cultivated in this area. Price: ₹42/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/IR_64.jpg/220px-IR_64.jpg" alt="IR 64">
-            </div>
-            <div class="rice-variety market_prices_all">
-                <h2>6. Krishna</h2>
-                <p><strong>HMT Rice</strong>: A popular medium-grain variety with good cooking properties. Price: ₹48/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/HMT_rice.jpg/220px-HMT_rice.jpg" alt="HMT Rice">
-                <p><strong>BPT 5204 (Samba Masuri)</strong>: A popular variety with slender grains and a distinctive aroma. Price: ₹52/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Samba_Masuri_Rice.jpg/220px-Samba_Masuri_Rice.jpg" alt="BPT 5204">
-            </div>
-            <div class="rice-variety market_prices_all">
-                <h2>7. Guntur</h2>
-                <p><strong>Basmati Rice</strong>: Known for its long grains and fragrant aroma, often used in biryanis. Price: ₹120/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Basmati_Rice.jpg/220px-Basmati_Rice.jpg" alt="Basmati Rice">
-                <p><strong>MTU 1001</strong>: A high-yield variety with medium-long grains. Price: ₹50/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/MTU_1001.jpg/220px-MTU_1001.jpg" alt="MTU 1001">
-            </div>
-            <div class="rice-variety market_prices_all">
-                <h2>8. Nellore</h2>
-                <p><strong>Nellore Sannalu</strong>: Renowned for its unique taste and fine grain quality. Price: ₹55/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Nellore_Sannalu.jpg/220px-Nellore_Sannalu.jpg" alt="Nellore Sannalu">
-                <p><strong>Sona Masuri</strong>: A popular variety known for its lightweight and aromatic grains. Price: ₹50/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Sona_masuri_rice.jpg/220px-Sona_masuri_rice.jpg" alt="Sona Masuri">
-            </div>
-            <div class="rice-variety market_prices_all">
-                <h2>9. Anantapur</h2>
-                <p><strong>NLR 34449 (Nellore Mahsuri)</strong>: A fine-grain variety known for its quality and taste. Price: ₹53/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/NLR_34449.jpg/220px-NLR_34449.jpg" alt="NLR 34449">
-                <p><strong>MTU 7029 (Swarna)</strong>: A high-yield variety with good cooking quality. Price: ₹40/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Swarna_rice.jpg/220px-Swarna_rice.jpg" alt="MTU 7029">
-            </div>
+            <p class="Prices">Price: ₹60/kg</p>
+
         </div>
 
         <div class="tabcontent" id="Chillies1">
@@ -134,7 +95,7 @@
             <div class="chilli-variety market_prices_all">
                 <h2>3. Khammam</h2>
                 <p><strong>Kanthari White Chilli</strong>: Known for its unique white color and strong pungency. Price: ₹150/kg</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kanthari_White_Chilli.jpg/220px-Kanthari_White_Chilli.jpg" alt="j">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kanthari_White_Chilli.jpg/220px-Kanthari_White_Chilli.jpg" alt="Kanthari White Chilli">
                 <p><strong>Bhut Jolokia</strong>: Also known as the ghost pepper, one of the hottest chilli varieties. Price: ₹200/kg</p>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bhut_Jolokia.jpg/220px-Bhut_Jolokia.jpg" alt="Bhut Jolokia">
             </div>
@@ -161,9 +122,7 @@
             </div>
         </div>
 
-
-        
-        <div class="tabcontent" id="Greengram market_prices_all">
+        <div class="tabcontent" id="Greengram">
             <h2>Greengram (Moong Dal) Prices</h2>
             <p><strong>Guntur Green Moong</strong>: High-quality moong with excellent flavor. Price: ₹100/kg</p>
             <img src="https://example.com/guntur_green_moong.jpg" alt="Guntur Green Moong">
@@ -171,28 +130,17 @@
             <img src="https://example.com/guntur_yellow_moong.jpg" alt="Guntur Yellow Moong">
             <p><strong>Guntur Moong Dal</strong>: Popular split moong dal for various Indian dishes. Price: ₹120/kg</p>
             <img src="https://example.com/guntur_moong_dal.jpg" alt="Guntur Moong Dal">
+            <div class="greengram-variety market_prices_all">
+                <h2>2. Nellore</h2>
+                <p><strong>Nellore Green Moong</strong>: Tender moong beans with a delicate taste. Price: ₹95/kg</p>
+                <img src="https://example.com/nellore_green_moong.jpg" alt="Nellore Green Moong">
+                <p><strong>Nellore Yellow Moong</strong>: Rich and creamy dal variety for comfort foods. Price: ₹105/kg</p>
+                <img src="https://example.com/nellore_yellow_moong.jpg" alt="Nellore Yellow Moong">
+                <p><strong>Nellore Split Moong</strong>: Split moong dal ideal for soups and stews. Price: ₹115/kg</p>
+                <img src="https://example.com/nellore_split_moong.jpg" alt="Nellore Split Moong">
+            </div>
         </div>
-        
-        <div class="greengram-variety market_prices_all">
-            <h2>2. Nellore</h2>
-            <p><strong>Nellore Green Moong</strong>: Tender moong beans with a delicate taste. Price: ₹95/kg</p>
-            <img src="https://example.com/nellore_green_moong.jpg" alt="Nellore Green Moong">
-            <p><strong>Nellore Yellow Moong</strong>: Rich and creamy dal variety for comfort foods. Price: ₹105/kg</p>
-            <img src="https://example.com/nellore_yellow_moong.jpg" alt="Nellore Yellow Moong">
-            <p><strong>Nellore Split Moong</strong>: Split moong dal ideal for soups and stews. Price: ₹115/kg</p>
-            <img src="https://example.com/nellore_split_moong.jpg" alt="Nellore Split Moong">
-        </div>
-        
-        <div class="greengram-variety market_prices_all">
-            <h2>3. Prakasam</h2>
-            <p><strong>Prakasam Green Moong</strong>: Fresh and earthy moong beans for wholesome meals. Price: ₹105/kg</p>
-            <img src="https://example.com/prakasam_green_moong.jpg" alt="Prakasam Green Moong">
-            <p><strong>Prakasam Yellow Moong</strong>: Smooth and buttery dal variety for creamy dishes. Price: ₹115/kg</p>
-            <img src="https://example.com/prakasam_yellow_moong.jpg" alt="Prakasam Yellow Moong">
-            <p><strong>Prakasam Split Moong</strong>: Split moong dal perfect for quick cooking. Price: ₹125/kg</p>
-            <img src="https://example.com/prakasam_split_moong.jpg" alt="Prakasam Split Moong">
-        </div>
-        
+
         <div class="tabcontent" id="Blackgram">
             <h2>Blackgram (Urad Dal) Prices</h2>
             <div class="blackgram-variety market_prices_all">
@@ -203,7 +151,7 @@
                 <img src="https://example.com/guntur_split_urad_dal.jpg" alt="Guntur Split Urad Dal">
                 <p><strong>Guntur Desi Urad Dal</strong>: Traditional variety with authentic flavor. Price: ₹100/kg</p>
                 <img src="https://example.com/guntur_desi_urad_dal.jpg" alt="Guntur Desi Urad Dal">
-            </div> 
+            </div>
             <div class="blackgram-variety market_prices_all">
                 <h2>2. Krishna</h2>
                 <p><strong>Krishna Blackgram</strong>: Well-known blackgram variety from the Krishna region. Price: ₹85/kg</p>
