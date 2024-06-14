@@ -94,3 +94,23 @@ p, img {
   height: 50px;
   width: 196px;
 }
+
+.Yellow_Moong img {
+  filter: drop-shadow(0 0 00.75rem #F7ED4E);
+}
+
+.Green_Moong img {
+  filter: drop-shadow(0 0 00.75rem #C2BA4E);
+}
+
+.Blackgram img {
+  filter: drop-shadow(0 0 00.75rem #DADBE0);
+}
+
+.Urad_Dal img {
+  filter: drop-shadow(0 0 00.75rem #FCF7D2);
+}
+
+#Greengram1 img #Blackgram1 img {
+  
+}
