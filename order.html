@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Andhra Pradesh Rythu Sahayam</title>
+    <link rel="icon" href="./logo1.png" type="image/png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #141414;
+            color: #fff;
+        }
+        .button {
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+            background: #f77062;
+            color: #fff;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            font-size: 1.5rem;
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input, textarea, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #fffefeea;
+            color: #000;
+            padding: 8px;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+        }
+        
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+       
+        h1 {
+            font-size: 3rem;
+            margin: 1rem 0;
+            text-align: center;
+            gap: 2rem;
+            background-color: #ff8177;
+            background: linear-gradient(to top, #ff0844 0%, #ffb149 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            background-color: #fff;
+            color: #000;
+            max-width: 500px;
+            width: 100%;
+        }
+        .dialog-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="main_content" id="main">
+        <h1>Order a Product</h1>
+        <form id="book-now-form">
+            <label for="crop">Select Crop:</label>
+            <select id="crop" name="crop" required aria-required="true" onchange="showCropDetails()">
+                <option value="">Select</option>
+                <option value="rice">Rice</option>
+                <option value="chilli">Chilli</option>
+                <option value="blackgram">Blackgram</option>
+                <option value="greengram">Green Gram</option>
+            </select>
+        
+            <div id="rice-details" style="display: none;">
+                <label for="rice-variety">Select Rice Variety:</label>
+                <select id="rice-variety" name="rice-variety">
+                    <option value="MTU 1010">MTU 1010 (Cotton Dora Sannalu)</option>
+                    <option value="Kurnool Sona Masuri">Kurnool Sona Masuri</option>
+                    <option value="Nellore Sannalu">Nellore Sannalu</option>
+                    <option value="Chitti Muthyalu">Chitti Muthyalu</option>
+                </select>
+        
+                <label for="rice-quantity">Quantity (kg):</label>
+                <input type="number" id="rice-quantity" name="rice-quantity" min="1" required>
+            </div>
+        
+            <div id="chilli-details" style="display: none;">
+                <label for="chilli-variety">Select Chilli Variety:</label>
+                <select id="chilli-variety" name="chilli-variety">
+                    <option value="Guntur Sannam">Guntur Sannam</option>
+                    <option value="Teja Chilli">Teja Chilli</option>
+                    <option value="Wonder Hot Chilli">Wonder Hot Chilli</option>
+                </select>
+        
+                <label for="chilli-quantity">Quantity (kg):</label>
+                <input type="number" id="chilli-quantity" name="chilli-quantity" min="1" required>
+            </div>
+        
+            <div id="blackgram-details" style="display: none;">
+                <label for="blackgram-variety">Select Blackgram Variety:</label>
+                <select id="blackgram-variety" name="blackgram-variety">
+                    <option value="Krishna Blackgram">Krishna Blackgram</option>
+                    <option value="Desi Urad Dal">Desi Urad Dal</option>
+                </select>
+        
+                <label for="blackgram-quantity">Quantity (kg):</label>
+                <input type="number" id="blackgram-quantity" name="blackgram-quantity" min="1" required>
+            </div>
+        
+            <div id="greengram-details" style="display: none;">
+                <label for="greengram-variety">Select Green Gram Variety:</label>
+                <select id="greengram-variety" name="greengram-variety">
+                    <option value="Green Moong">Green Moong</option>
+                    <option value="Yellow Moong">Yellow Moong</option>
+                </select>
+        
+                <label for="greengram-quantity">Quantity (kg):</label>
+                <input type="number" id="greengram-quantity" name="greengram-quantity" min="1" required>
+            </div>
+        
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required aria-required="true"></textarea>
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+        
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required aria-required="true" min="21">
+        
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required aria-required="true">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        
+            <label for="phone">WhatsApp Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="^\+?[1-9]\d{1,14}$" required aria-required="true">
+        
+            <label for="email">Email (Optional):</label>
+            <input type="email" id="email" name="email">
+        
+            <button type="submit" class="button">Order Now</button>
+        </form>
+        
+        <dialog id="book-dialog">
+            <div class="dialog-content">
+                <p>Your booking is confirmed and your service professional will contact you soon.</p>
+                <button id="redirect-button" class="button">Go to Market Prices</button>
+            </div>
+        </dialog>
+        
+        <script>
+            function showCropDetails() {
+                var crop = document.getElementById("crop").value;
+                var riceDetails = document.getElementById("rice-details");
+                var chilliDetails = document.getElementById("chilli-details");
+                var blackgramDetails = document.getElementById("blackgram-details");
+                var greengramDetails = document.getElementById("greengram-details");
+        
+                riceDetails.style.display = "none";
+                chilliDetails.style.display = "none";
+                blackgramDetails.style.display = "none";
+                greengramDetails.style.display = "none";
+        
+                if (crop === "rice") {
+                    riceDetails.style.display = "block";
+                } else if (crop === "chilli") {
+                    chilliDetails.style.display = "block";
+                } else if (crop === "blackgram") {
+                    blackgramDetails.style.display = "block";
+                } else if (crop === "greengram") {
+                    greengramDetails.style.display = "block";
+                }
+            }
+        
+            document.getElementById('book-now-form').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                const dialog = document.getElementById('book-dialog');
+                dialog.showModal();
+            });
+            
+            document.getElementById('redirect-button').addEventListener('click', function() {
+                window.location.href = './market-prices.html';
+            });
+        </script>
+    </main>
+</body>
+</html>
