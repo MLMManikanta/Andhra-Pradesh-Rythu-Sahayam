@@ -40,6 +40,12 @@ button {
   text-decoration: none;
   font-size: 1.5rem;
 }
+.main_content h1 {
+  background: #90cf8e;
+  background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .image img {
     margin-left: 0px;
