@@ -13,7 +13,7 @@ body {
 
 :root {
     --header-gradient: linear-gradient(8deg, rgb(240, 8, 8) 22%, rgba(255,154,0,1) 100%);
-    --TEXTC: #fedf42;
+    --TEXTC: #ffc107;
 }
 
 main {
@@ -79,8 +79,9 @@ td img, li img {
     align-items: flex-start;
     justify-content: start;
     margin-left: 100px;
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
+
 .Status_N {
     margin-left: -100px;
     margin-top: 50px;
