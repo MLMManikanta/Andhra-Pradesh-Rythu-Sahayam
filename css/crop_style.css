@@ -78,3 +78,7 @@ img.BGC {
     filter: drop-shadow(0 0 0.75rem #7E7B7B);
 }
 
+h2 {
+  margin-left: 20px;
+  font-size: 1.8rem;
+}
