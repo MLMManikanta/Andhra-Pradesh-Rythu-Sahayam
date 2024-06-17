@@ -27,6 +27,11 @@ button {
     gap: 40px;
 }
 
+.image img {
+    margin-left: 0px;
+
+}
+
 li {
   list-style: none;
 }
