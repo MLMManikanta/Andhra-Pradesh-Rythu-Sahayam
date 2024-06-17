@@ -7,13 +7,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #010101;
+    /* background-color: #010101; */
+    background-color: #000;
 }
 
 :root {
     --TEXTC: linear-gradient(8deg, #f7c912 22%, rgb(255, 72, 0) 100%);
-    --H2:linear-gradient(0deg, rgba(255,154,0,1) 2%, rgba(255,0,0,1) 100%);
-    --h3: radial-gradient(circle, rgba(202,8,8,1) 0%, rgba(252,5,5,1) 8%, rgba(241,51,51,1) 64%, rgba(205,8,8,1) 75%, rgba(255,68,68,0.8341387580422794) 97%);
+    --H2:linear-gradient(0deg, #EB9C35 90%, #C4501A 20%, #8B2A14 10%);
+    --H1: radial-gradient(circle,  #00563f 0%,    #00563f 20%,   #004225 40%,   #013220 70%,   #2a3439 100% );
+    --button: linear-gradient(to top, #FFC107 0%, #169347 90%);
+
 }
 
 /* ---Skip to Main--- */
@@ -43,15 +46,18 @@ body {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    margin-bottom: 40px;
 }
 
 /* Navigation */
+
 .menu {
     display: flex;
     flex-direction: row;
     list-style: none; 
     margin: 0;
     padding: 0;
+    
 }
 
 .menu > li {
@@ -68,16 +74,17 @@ ul {
 .menu li {
     margin: 5px;
     padding: 5px;
-    background: linear-gradient(to top, #FFC107 10%, #169347 90%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-li a {
+.menu li a {
     text-decoration: none;
     color: #000;
+    background: var(--button);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 /* Main Section */
@@ -92,7 +99,8 @@ h1 {
     margin: 1rem 0;
     text-align: center;
     gap: 2rem;
-    background: radial-gradient(circle, #f7c912 0%, #ff9a00 20%, #ff0000 70%);
+    background: radial-gradient(circle, #f7c912 0%, #ff9a00 20%, #ff0000 70%); 
+    /* background: radial-gradient(circle,  #00563f 0%,    #00563f 20%,   #004225 40%,   #013220 70%,   #2a3439 100% ); */
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -101,8 +109,8 @@ h2 {
     font-size: 2rem;
     margin: 1rem 0;
     text-align: start;
-    /* background: var(--H2); */
-    background: #ffb302;
+    background: var(--H2);
+   /*  background: #5C8620; */
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
@@ -112,14 +120,15 @@ h3 {
     font-size: 1.5rem;
     margin: 1rem 0;
     text-align: start;
-    background: #f20505;
+    background:#749F34 ;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
+    font-weight: 900;
 }
 
 h4 {
-        color: #f13333;
+        color: #8BBB41;
         font-size: 1.5rem;
         font-weight: 600;
         margin: 20px 0;
@@ -129,7 +138,7 @@ h4 {
 p {
     font-size: 1rem;
     margin: 1rem 0;
-    background: #f7c912;
+    background: #C7EEC2;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 3px;
@@ -192,7 +201,7 @@ footer div h2 {
 }
 
 p {
-    color: #FEDF42;
+    color: #C7EEC2;
     font-size: 1.35rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
