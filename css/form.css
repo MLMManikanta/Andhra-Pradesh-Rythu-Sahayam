@@ -27,14 +27,14 @@
             margin: auto;
         }
 
-        label {
+        .inputfield label {
             font-size: 1.5rem;
             display: block;
             width: 100%;
             margin-bottom: 10px;
         }
 
-        input, textarea, select {
+        .inputfield input,  textarea, select {
             display: block;
             width: 100%;
             margin-bottom: 10px;
@@ -63,6 +63,16 @@
             -webkit-text-fill-color: transparent;
         }
         
+        .WhatsApp_ch {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .WhatsApp_ch .checkbox{
+            width: 30px;
+        }
+
         dialog {
             border: none;
             border-radius: 10px;

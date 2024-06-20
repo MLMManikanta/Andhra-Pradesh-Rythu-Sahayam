@@ -49,7 +49,7 @@ about-sections_li  {
 
 }
 
-/* about-sections {
+about-sections {
     border-left: 5px solid #0f0f0f11;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
@@ -64,4 +64,4 @@ about-sections_li li {
     list-style-type:circle;
     font-size: 1.6rem;
     color: #1eff009d;
-} */
+} 
