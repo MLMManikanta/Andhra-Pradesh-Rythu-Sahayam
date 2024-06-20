@@ -40,16 +40,19 @@ p {
     margin-left: -40px;
 }
 
-about-sections_li  {
+
+.about-sections_li  li {
+    background:  #74C69D; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 0.5em;
     list-style-type:circle;
     font-size: 1.6rem;
-    color: #1eff009d;
-    background-color: #1eff009d;
+    
 
 }
 
-about-sections {
+/* about-sections {
     border-left: 5px solid #0f0f0f11;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
@@ -64,4 +67,4 @@ about-sections_li li {
     list-style-type:circle;
     font-size: 1.6rem;
     color: #1eff009d;
-} 
+} */
