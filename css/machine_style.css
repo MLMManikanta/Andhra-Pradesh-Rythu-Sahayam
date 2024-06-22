@@ -379,3 +379,7 @@ p {
 #Rotavator_small_gg img, #Rotavator_small_Blackgram img {
   filter: drop-shadow(0 0 0.75rem #F82B4C);
 }
+
+.mahindra h1 {
+  margin-left: -150px;
+}
