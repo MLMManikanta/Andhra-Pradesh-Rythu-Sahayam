@@ -184,6 +184,12 @@ p {
     margin-left: -100px;
 }
 
+.powerh1 h1  {
+    text-align: start;
+    margin-left: -10px;
+
+}
+
 /* footer */
 footer {
     background-color: #000;
