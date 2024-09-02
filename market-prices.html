@@ -3,42 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andhra Pradesh Rithu Sahayam</title>
-    <link rel="icon" href="./logo1.png" type="image/icon type">
+    <title>Andhra Pradesh Rythu Sahayam</title>
+    <link rel="icon" href="./logo1.png" type="image/png">
     <link rel="stylesheet" href="css/header_style.css">
+    <link rel="stylesheet" href="./css/market_prices.css">
 </head>
 <body>
     <a href="#main" class="btn skip-link">Skip to main content</a>
     <header>
         <div class="container">
             <div class="logo">
-                <a href="./index.html">
+                <a href="./index.html" class="image">
                     <img src="./logo1.png" alt="Company Logo" width="200" height="150">
                 </a>
             </div>
             <nav aria-label="Contextual menu">
                 <ul class="menu">
-                    <li class="menu-item"><a href="./crops.html">Crops</a></li>
-                    <li class="menu-item" id="machines-dropdown">
-                        <a href="./machines.html"> Machines</a>
-                    </li>
-                    <li class="menu-item"><a href="./market-prices.html">Market Prices</a></li>
-                    <li class="menu-item"><a href="./crop-buyers.html">Crop Buyers</a></li>
-                    <li class="menu-item"><a href="./farmer-adopt.html">Farmer Adopt</a></li>
-                    <li class="menu-item"><a href="./about_us.html">About Us</a></li>
+                    <li class="menu-item"><a href="./crops.html">Harvests</a></li>
+                    <li class="menu-item"> <a href="./machines.html"> Farming equipment</a></li>
+                    <li class="menu-item"><a href="./market-prices.html">Prices</a></li>
+                    <li class="menu-item"><a href="./farmer-adopt.html"> Farmer buddy</a></li>
+                    <li class="menu-item"><a href="./about_us.html">About Us </a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="main_content">
-     
+
+    <main class="main_content" id="main">
+        <h1>Crops prices</h1>
+
+        <div class="tab-container">
+            <div class="tab tab_controls">
+                <button class="tablinks" onclick="openTab(event, 'Rice1')" id="defaultOpen1" >Rice</button>
+                <button class="tablinks" onclick="openTab(event, 'Chillies1')"  >Chillies</button>
+                <button class="tablinks" onclick="openTab(event, 'Greengram1')" >Greengram</button>
+                <button class="tablinks" onclick="openTab(event, 'Blackgram1')">Blackgram</button>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="Rice1">
+            <h2>Rice Varieties in Andhra Pradesh</h2>
+
+            <h3><strong>MTU 1010 (Cotton Dora Sannalu)</strong>: A high-yield variety with good cooking qualities.</h3>
+            <div class="all_market"> 
+                <img src="./Market_Prices/Rice/Cotton Dora Sannalu.png" alt="MTU 1010">
+                <!--  <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a> -->
+                <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+            </div>
+           
+            
+            <h3><strong>Kurnool Sona Masuri</strong>: A fine-grain rice variety known for its aroma and taste.</h3>
+            <div class="all_market"> 
+                <img src="./Market_Prices/Rice/Sona Masoori Rice.jpg" alt="Kurnool Sona Masuri">
+                <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+            </div>
+          
+
+            <h3><strong>Nellore Sannalu</strong>: A fine grain rice with a unique taste.</h3>
+            <div class="all_market">
+                <img src="./Market_Prices/Rice/Nellore Sannalu.png" alt="Nellore Sannalu">
+                 <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+            </div>
+          
+
+            <h3><strong>Chitti Muthyalu</strong>: Known for its small, fine grains and excellent taste.</h3>
+            <div class="all_market">
+                <img src="./Market_Prices/Rice/Chitti Muthyalu.png" alt="Chitti Muthyalu">
+                 <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+            </div>
+           
+
+        </div>
+
+        <div class="tabcontent" id="Chillies1">
+            <h2>Chilli Varieties in Andhra Pradesh</h2>
+
+            <div class="chilli-variety market_prices_all">
+
+                <h3><strong>Guntur Sannam</strong>: Renowned for its pungency and deep red color.</h3>
+                <div class="all_market"> 
+                <img src="./Market_Prices/Chilli/Guntur Sannam.jpg" alt="Guntur Sannam">
+                 <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+                </div>
+              
+                
+                <h3><strong>Teja Chilli</strong>: Extremely hot variety used for its strong spice level.</h3>
+                <div class="all_market">
+                <img src="./Market_Prices/Chilli/Teja Chilli.png" alt="Teja Chilli">
+                 <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+               </div>
+               
+
+                <h3><strong>Wonder Hot Chilli</strong>: Popular for its balanced heat and flavor.</h3>
+                <div class="all_market">
+                <img src="./Market_Prices/Chilli/Wonder Hot Chilli.png" alt="Wonder Hot Chilli">
+                 <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+                </div>
+             
+            </div>
+ 
+        </div>
+
+        <div class="tabcontent" id="Greengram1">
+            <h2>Greengram (Moong Dal) Prices</h2>
+
+            <h3><strong>Green Moong</strong>: High-quality moong with excellent flavor.</h3>
+                <div class="all_market Green_Moong"> 
+                <img src="./Market_Prices/green_gram/Nellore Split Moong.png" alt="Guntur Sannam">
+                 <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+                </div>
+             
+
+                <h3><strong>Yellow Moong</strong>: Variant known for its vibrant color and nutty taste.</h3>
+                    <div class="all_market Yellow_Moong"> 
+                    <img src="./Market_Prices/green_gram/Yellow Moong Dal.png" alt="Guntur Sannam">
+                     <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+                    </div>
+         
+
+             </div>
+
+        <div class="tabcontent" id="Blackgram1">
+            <h2>Blackgram (Urad Dal) Prices</h2>
+
+            <h3><strong>Blackgram</strong>: Premium quality blackgram with rich taste.</h3>
+            <div class="all_market Blackgram"> 
+            <img src="./Market_Prices/black_gram/Krishna Blackgram.png" alt="Guntur Sannam">
+             <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+            </div>
+    
+
+            <h3><strong>Desi Urad Dal</strong>: Traditional variety with authentic flavor.</h3>
+                <div class="all_market Urad_Dal"> 
+                <img src="./Market_Prices/black_gram/Desi Urad Dal.png" alt="Guntur Sannam">
+                 <a href="./order.html" target="_blank" class="mar_pric_button">Click to order</a>
+                </div>
+               
+        </div>
+        
     </main>
 
     <footer>
         <div>
-            <p>&copy; 2024 Andhra Pradesh Rithu Sahayam. All rights reserved.</p>
+            <h2>&copy; 2024 Andhra Pradesh Rythu Sahayam. All rights reserved.</h2>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./market_prices.js"></script>
 </body>
 </html>

@@ -12,8 +12,10 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+document.getElementById("defaultOpen").click();
 
-/* Tractor */
+
+
 function showModal(id) {
     var modal = document.getElementById(id);
     modal.showModal();
@@ -22,4 +24,22 @@ function showModal(id) {
 function closeModal(id) {
     var modal = document.getElementById(id);
     modal.close();
+}
+
+function showModal(dialogId) {
+    var dialog = document.getElementById(dialogId);
+    if (dialog) {
+        dialog.showModal();
+    } else {
+        console.error("Dialog element not found with ID:", dialogId);
+    }
+}
+
+function closeModal(dialogId) {
+    var dialog = document.getElementById(dialogId);
+    if (dialog) {
+        dialog.close();
+    } else {
+        console.error("Dialog element not found with ID:", dialogId);
+    }
 }

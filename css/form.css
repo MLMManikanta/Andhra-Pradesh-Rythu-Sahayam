@@ -1,0 +1,91 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .button {
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+            background: #FFC107;
+            color: #000;
+            font-size: 1.75rem;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .inputfield label {
+            font-size: 1.5rem;
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .inputfield input,  textarea, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #fffefeea;
+            color: #000;
+            padding: 8px;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 1rem 0;
+            text-align: center;
+            gap: 2rem;
+            background: linear-gradient(to top, #FFC107 0%, #169347 90%);;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .WhatsApp_ch {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .WhatsApp_ch .checkbox{
+            width: 30px;
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            background-color: #fff;
+            color: #000;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .dialog-content {
+            text-align: center;
+        }
+        
+    

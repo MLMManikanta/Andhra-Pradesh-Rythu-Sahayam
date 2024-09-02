@@ -7,12 +7,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #010101;
+    /* background-color: #010101; */
+    background-color: #000;
 }
 
 :root {
-    --TEXTC: linear-gradient(8deg, #f7c912 22%, rgba(255,154,0,1) 100%);
-    --H2:linear-gradient(0deg, rgba(255,154,0,1) 14%, rgba(255,0,0,1) 100%);
+    --TEXTC: linear-gradient(8deg, #f7c912 22%, rgb(255, 72, 0) 100%);
+    --H2:linear-gradient(0deg, #EB9C35 90%, #C4501A 20%, #8B2A14 10%);
+    --H1: radial-gradient(circle,  #00563f 0%,    #00563f 20%,   #004225 40%,   #013220 70%,   #2a3439 100% );
+    --button: linear-gradient(to top, #FFC107 0%, #169347 90%);
+
 }
 
 /* ---Skip to Main--- */
@@ -36,23 +40,24 @@ body {
 }
 
 /* ---Header--- */
-
-
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    margin-bottom: 40px;
 }
 
 /* Navigation */
+
 .menu {
     display: flex;
     flex-direction: row;
     list-style: none; 
     margin: 0;
     padding: 0;
+    
 }
 
 .menu > li {
@@ -61,67 +66,32 @@ body {
 
 ul {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
 .menu li {
-    margin: 5px;
+    margin: 2px;
     padding: 5px;
-    background: linear-gradient(to top, #FFC107 30%, #169347);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1.5em;
     font-weight: bold;
+   
 }
 
-li a {
+.menu li a {
     text-decoration: none;
     color: #000;
+    background: var(--button);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-/* Machines dropdown */
-/* .sub-menu {
-    list-style: none; 
-    position: absolute;
-    left: 50px;
-    top: 100%;
-    background-color: #000;
-    border-radius: 4px;
-    border: 2px solid rgba(128, 128, 128, 0.248);
-    display: none;
-    padding: 10px;
-    gap:4px;
+nav {
+    margin-top: -60px;
+    margin-right: 40px;
 }
 
-.sub-menu::before {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    border: 10px solid transparent;
-    border-bottom-color: #000;
-}
-
-.sub-menu::after {
-    position: absolute;
-    top: -16px;
-    left: 20px;
-    border: 10px solid transparent;
-    border-bottom-color: rgba(128, 128, 128, 0.248);
-}
-
-.menu-item:hover .sub-menu, .menu-item:focus-within .sub-menu {
-    display: block;
-}
-
-.container a:hover,.container a:focus {
-    outline: #fff 3px solid;
-    padding: 2px;
-    margin: 2px;
-    text-decoration: underline;
-    border-radius: 4px;
-} */
 
 /* Main Section */
 .main_content {
@@ -135,7 +105,8 @@ h1 {
     margin: 1rem 0;
     text-align: center;
     gap: 2rem;
-    background: radial-gradient(circle, #f7c912 0%, #ff9a00 20%, #ff0000 70%);
+    background: radial-gradient(circle, #f7c912 0%, #ff9a00 20%, #ff0000 70%); 
+    /* background: radial-gradient(circle,  #00563f 0%,    #00563f 20%,   #004225 40%,   #013220 70%,   #2a3439 100% ); */
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -144,8 +115,8 @@ h2 {
     font-size: 2rem;
     margin: 1rem 0;
     text-align: start;
-    /* background: var(--H2); */
-    background: #ff0000;
+    background: var(--H2);
+   /*  background: #5C8620; */
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
@@ -155,19 +126,68 @@ h3 {
     font-size: 1.5rem;
     margin: 1rem 0;
     text-align: start;
-    background: var(--TEXTC);
+    background:#749F34 ;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
+    font-weight: 900;
+}
+
+h4 {
+        color: #8BBB41;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 20px 0;
+        margin-left: 110px;
 }
 
 p {
     font-size: 1rem;
     margin: 1rem 0;
-    background: var(--TEXTC);
+    background: #C7EEC2;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 3px;
+    color: #fff;
+}
+
+.h2-center h2 {
+    text-align: center;
+}
+
+.main_content_index {
+    margin: 0 100px;
+
+}
+
+.drive_h3 h3 {
+    text-align: start;
+    margin-left: -1px;
+}
+
+.drive_li ul li p a{
+    text-decoration: underline;
+    
+}
+.tractor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.Machineries_h3 {
+    text-align: start;
+    margin-left: -100px;
+}
+
+.powerh1 h1  {
+    text-align: start;
+    margin-left: -20px;
+
 }
 
 /* footer */
@@ -176,10 +196,24 @@ footer {
     color: #fff;
     padding: 20px;
     margin: 0px;
-    text-align: center;
     bottom: 0;
     width: 100%;
     background: var(--TEXTC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+}
+
+footer div h2 {
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #ff2f00, #FFC300);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    color: #C7EEC2;
+    font-size: 1.35rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo1.png" type="image/icon type">
+    <title>Book Now - Andhra Pradesh Rythu Sahayam</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <h1>To Purchase/ Lease a machine.</h1>
+    <form id="book-now-form">
+        <div class="inputfield" >
+        <label for="crop">Select Crop:</label>
+        <select id="crop" name="crop" required aria-required="true">
+            <option value="rice">Rice</option>
+            <option value="chilli">Chilli</option>
+            <option value="blackgram">Blackgram</option>
+            <option value="greengram">Green Gram</option>
+        </select>
+    </div>
+    <div class="inputfield" >
+        <label for="m_name">Machinary Name</label>
+        <input type="text" id="m_name" name="name">
+    </div>
+        <div class="inputfield" >
+        <label for="service-type">Service Type:</label>
+        <select id="service-type" name="service-type" required aria-required="true">
+            <option value="Rent">Rent</option>
+            <option value="Buy">Purchase</option>
+        </select>
+    </div>
+        <div class="inputfield" >
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required aria-required="true">
+    
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required aria-required="true">
+    
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required aria-required="true"></textarea>
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required aria-required="true" min="21">
+    
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required aria-required="true">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="email">Email (Optional):</label>
+        <input type="email" id="email" name="email">
+    
+         </div>
+
+
+            <div class=" WhatsApp_ch inputfield">
+                <input type="checkbox" id="email" class="checkbox">
+                <label for="email">Receive WhatsApp Notifications</label>
+                </div>
+    
+        
+        <button type="submit" class="button">Book Now</button>
+    </form>
+    
+    <dialog id="book-dialog">
+        <div class="dialog-content">
+            <p>Your booking is confirmed and your service professional will contact you soon.</p>
+            <button id="redirect-button" class="button">Go to Home Page</button>
+        </div>
+    </dialog>
+    
+    <script>
+        document.getElementById('book-now-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const dialog = document.getElementById('book-dialog');
+            dialog.showModal();
+        });
+        
+        document.getElementById('redirect-button').addEventListener('click', function() {
+            window.location.href = './machines.html';
+        });
+    </script>
+</body>
+</html>

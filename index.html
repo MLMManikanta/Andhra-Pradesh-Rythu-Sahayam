@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andhra Pradesh Rithu Sahayam</title>
+    <title>Andhra Pradesh Rythu Sahayam</title>
     <link rel="icon" href="./logo1.png" type="image/icon type">
-    <link rel="stylesheet" href="css/header_style.css">
+    <link rel="stylesheet" href="./css/machine_style.css">
+    <link rel="stylesheet" href="./css/header_style.css">
+
 </head>
 <body>
     <a href="#main" class="btn skip-link">Skip to main content</a>
+
     <header>
         <div class="container">
             <div class="logo">
@@ -18,31 +21,196 @@
             </div>
             <nav aria-label="Contextual menu">
                 <ul class="menu">
-                    <li class="menu-item"><a href="./crops.html">Crops</a></li>
-                    <li class="menu-item" id="machines-dropdown">
-                        <a href="./machines.html"> Machines</a>
-                    </li>
-                    <li class="menu-item"><a href="./market-prices.html">Market Prices</a></li>
-                    <li class="menu-item"><a href="./crop-buyers.html">Crop Buyers</a></li>
-                    <li class="menu-item"><a href="./farmer-adopt.html">Farmer Adopt</a></li>
-                    <li class="menu-item"><a href="./about_us.html">About Us</a></li>
+                    <li class="menu-item"><a href="./crops.html">Harvests</a></li>
+                    <li class="menu-item"> <a href="./machines.html"> Farming equipment</a></li>
+                    <li class="menu-item"><a href="./market-prices.html">Prices</a></li>
+                    <li class="menu-item"><a href="./farmer-adopt.html"> Farmer buddy</a></li>
+                    <li class="menu-item"><a href="./about_us.html">About Us </a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="main_content">
-        <div>
-                <h1 class="APRS">Andhra Pradesh Rithu Sahayam</h1>
-                <p>
-                    Andhra Pradesh is known as the ‘Rice Bowl of India’, Andhra Pradesh is the largest producer of rice in the country. Andhra Pradesh has 13 districts, six agro-climatic zones, and five different soil types. The state has 10.1 million ha of cultivated area, c onstituting 37% of the total geographical area of the state. The irrigated area is 36% of the total cultivated area. Andhra Pradesh has mostly red lateritic and black soil, with low fertility and salinity problems. The important crops sown are rice, cotton, groundnut, pigeon pea, sunflower, black gram, and sorghum..</p>
-            </div>
-    </main>
 
+    <main id="main" class="main_content_index">
+        <div>
+            <h1 class="APRS">Andhra Pradesh Rythu Sahayam</h1>
+            <p>
+                Welcome to Andhra Pradesh Rithu Sahayam, your ultimate guide to agriculture in Andhra Pradesh.
+                Known as the ‘Rice Bowl of India’, Andhra Pradesh stands as the largest producer of rice in the country.
+                With its diverse landscape comprising 13 districts, six agro-climatic zones, and five distinct soil types,
+                the state offers a rich tapestry for agricultural pursuits.
+            </p>
+            <p>
+                Spanning over 10.1 million hectares of cultivated area, which constitutes 37% of the state's total geographical area,
+                Andhra Pradesh supports a variety of important crops. Among these, rice is the most prominent, followed by chillies,
+                greengram (moong dal), and blackgram (urad dal). These crops are vital to the state's economy and are cultivated
+                extensively across different regions.
+            </p>
+            <p>
+                The state's agriculture benefits from a significant irrigated area, accounting for 36% of the total cultivated land.
+                Despite challenges such as low soil fertility and salinity problems, Andhra Pradesh continues to thrive due to its
+                resilient farming community and supportive agricultural policies.
+            </p>
+            <div class="h2-center">
+                <h2 class="main_h2">Farming equipment</h2>
+            </div>
+            <p>
+                Modern farming in Andhra Pradesh has been revolutionized by the adoption of advanced agricultural machinery. 
+                Key machines used include:
+                <div class="Machineries_h3">
+                <h3 >Tractors:</h3>
+                 </div> 
+                        <p>A tractor is an engineered vehicle built for high tractive effort at low speeds, mainly for hauling trailers or machinery in agriculture, mining, or construction. It mechanizes tasks like tillage, powering implements either towed or mounted. It's essential for modern farming, providing both power and traction for various operations.</p>
+                        <div >
+                            <ul class="tractor tractor_main ">
+                                <li><button class="btn_t" onclick="showModal('kubota1')"><img src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441_in.jpg" alt="SONALIKA DI 750 III"></button></li>
+                                <li><button class="btn_t" onclick="showModal('powertrac1')"><img src="./machinery_imges/Tractors/new-holland-3630-TX-Plus1.png" alt="NEW HOLLAND 3630"></button></li>
+                            </ul>
+                        </div>
+                    
+                            <dialog id="powertrac1">
+                                <div class="dialog-content">
+                                  <img class="POWERTRAC_img" src="./machinery_imges/Tractors/POWERTRAC_STEELTRAC.png" alt="NEW HOLLAND 3630">
+                                  <div class="details">
+                                    <div>
+                                      <div class="close">
+                                        <button onclick="closeModal('powertrac1')">✕</button>
+                                      </div>
+                                      <div class="inside_the_dialog powerh1">
+                                        <h1 class="centered1">NEW HOLLAND 3630</h1>
+                                      </div>
+                                    </div>
+                                    <ul class="center_main">
+                                        <li class="centered"><pre>Power             : 55   HP</pre></li>
+                                        <li class="centered"><pre>Engine            : 2300 cc</pre></li>
+                                        <li class="centered"><pre>Fuel Tank Capacity: 60 Lit</pre></li>
+                                        <li class="centered"><pre>Lifting Capacity  : 2000 KG</pre></li>
+                                        </ul>
+                                    
+                                    <div >
+                                        <div class="cost">
+                                      <h2>Price: Rs. 7,95,000</h2>
+                                      <h2>Rent: RS. 800 per day</h2>
+                                    </div>
+                                      <div>
+                                        <a class="ctus obtn" target="_blank"  href="./get_a_machine.html">Get a Machine</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </dialog>
+                                
+                    
+                              <dialog id="kubota1">
+                                <div class="dialog-content">
+                                   <img class="kubota_img" src="./machinery_imges/Tractors/KUBOTA_NEOSTAR_B2441_in.jpg" alt="SONALIKA DI 750 III">
+                                  <div class="details">
+                                    <div>
+                                      <div class="close">
+                                        <button onclick="closeModal('kubota1')">✕</button>
+                                      </div>
+                                      <div class="inside_the_dialog">
+                                        <h1 class="centered1">SONALIKA DI 750 III</h1>
+                                      </div>
+                                    </div>
+                                    <ul class="center_main">
+                                        <li class="centered"><pre>Power             : 24   HP</pre></li>
+                                        <li class="centered"><pre>Engine            : 2600 cc</pre></li>
+                                        <li class="centered"><pre>Fuel Tank Capacity: 23 Lit</pre></li>
+                                        <li class="centered"><pre>Lifting Capacity  : 750 KG</pre></li>
+                                        </ul>
+                                    <div >
+                                        <div class="cost">
+                                      <h2>Price: Rs. 5,00,000</h2>
+                                      <h2>Rent: RS. 800 per day</h2>
+                                    </div>
+                                      <div>
+                                        <a class="ctus obtn" target="_blank"  href="./get_a_machine.html">Get a Machine</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </dialog>
+                              
+                              <div class="Machineries_h3">
+                              <h3>Harvesters:</h3>
+                            </div>
+                                <p> Harvesters are specialized machines used in agriculture to efficiently gather crops like wheat, corn, or soybeans. They perform tasks like cutting, threshing, and cleaning, streamlining the harvesting process for farmers.</p>
+
+                                <ul class="Panesar">
+                                    <li><button class="btn Pdc" onclick="showModal('CHarvesting1')"><img  src="./machinery_imges/chilli/Harvesting/Mechanical_Harvesters.png" alt="Mechanical Harvesters"></button></li>
+                                      </ul>
+                                  </div> 
+                    
+                                  <dialog id="CHarvesting1">
+                                    <div class="dialog-content ch_mh ">
+                                      <img  class= "pg60" src="./machinery_imges/chilli/Harvesting/Mechanical_Harvesters.png" alt="Mechanical Harvesters">
+                                      <div class="details">
+                                        <div>
+                                          <div class="close">
+                                            <button onclick="closeModal('CHarvesting1')">✕</button>
+                                          </div>
+                                          <div class="inside_the_dialog pang60">
+                                            <h1 class="centered1 ">Chili peper harvester machine</h1>
+                                          </div>
+                                        </div>
+                                        <ul class="center_main">
+                                          <li class="centered"><pre>Power               : 140 HP </pre></li>
+                                          <li class="centered"><pre>Grain Tank Capacity : 2500 Kg</pre></li>
+                                          </ul>
+                                        <div>
+                                            <div class="cost">
+                                          <h2>Price: Rs. 35,00,000</h2>
+                                          <h2>Rent: RS. 2500 per hour</h2>
+                                        </div>
+                                          <div>
+                                            <a class="ctus obtn" target="_blank"  href="./get_a_machine.html">Get a Machine</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </dialog>
+                          </div>
+                            </div>                    
+
+                                
+            </p>
+
+            <div class="h2-center">
+                <h2 class="main_h2">Market Prices</h2>
+            </div>
+            <p>
+                Keeping track of market prices is crucial for farmers to make informed decisions about crop sales. Andhra Pradesh
+                Rithu Sahayam provides up-to-date information on market prices for major crops, helping farmers get the best value
+                for their produce. Regular updates ensure that farmers are aware of price fluctuations and can plan their sales
+                strategies accordingly.
+            </p>
+            <div class="h2-center">
+                <h2 class="main_h2">Farmer buddy</h2>
+            </div>
+            <p>
+              Farmer Buddy is a program designed to provide financial support to individuals in need. Our mission is to assist those facing financial hardships by offering grants, loans, and other resources to help them achieve stability and growth. Whether you're dealing with unexpected expenses, planning a project, or simply need a helping hand, Farmer Buddy is here to support you. Our streamlined application process ensures quick access to funds, empowering you to overcome challenges and build a brighter future. Join us in fostering a community where everyone has the opportunity to thrive with Farmer Buddy.
+            </p>
+            <div class="h2-center">
+                <h2 class="main_h2">Explore More</h2>
+            </div>
+            <div class="drive_h3 ">
+                <h3>Dive deeper into the various aspects of agriculture in Andhra Pradesh:</h3>
+                <ul class="drive_li">
+                    <li><p><a href="./crops.html"><b >Crops</b></a>: Detailed information on the major crops grown in the state.</p></li>
+                    <li><p><a href="./machines.html"><b >Machines</b></a>: Comprehensive guide on the agricultural machinery used by farmers.</p></li>
+                    <li><p><a href="./market-prices.html"><b>Market Prices</b></a>: Current market prices of key agricultural products.</p></li>
+                    <li><p><a href="./farmer-adopt.html"><b>Farmer Adopt</b></a>: Success stories and case studies of farmers adopting new techniques.</p></li>
+                </ul>
+            </div>
+        </div>
+    </main>
     <footer>
         <div>
-            <p>&copy; 2024 Andhra Pradesh Rithu Sahayam. All rights reserved.</p>
+            <h2>&copy; 2024 Andhra Pradesh Rythu Sahayam. All rights reserved.</h2>
         </div>
     </footer>
     <script src="./index.js"></script>
+    <script src="./machines.js"></script>
 </body>
 </html>
